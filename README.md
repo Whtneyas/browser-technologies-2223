@@ -15,4 +15,13 @@ I would want to be able to fill in a survey about the minor Web development. wit
 - Lessons ( How difficult it is )
 - Explain( Was this course well taught)
 - Personal understanding ( How well dom you understand it )
+- Validation
+* The survey has to be complete 
+* Provide clear error messages
+* Decide for yourself when and how the validation will take place
+- Make a clear interface tat allows the user to go back to previous questions (And maybe also skip to a question)
+- Clear interface that indicates where you are in the survey 
+- Visible radio buttons are not allowed only if css is been applied. 
+- The form should have a darkmode and light mode
+
 
