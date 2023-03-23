@@ -25,4 +25,19 @@ I would want to be able to fill in a survey about the minor Web development. wit
 - Visible radio buttons are not allowed only if css is been applied. 
 - The form should have a darkmode and light mode
 
+## Core functionalities  of my survey 
+- Indicate where you are in the survey
+- Placeholder in the labels 
+- All the questions wont be displaced at ones
+- Survey should be presentable without css 
+- Survey should work without js 
+- Validation should be shown in text with no red color for people who are color blind 
+- A good contrast between the background and the foreground. 
+- Labels, submit buttons should be able to work .
+
+
+
+
+
+
 
