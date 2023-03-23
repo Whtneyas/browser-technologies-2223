@@ -41,9 +41,11 @@ I would want to be able to fill in a survey about the minor Web development. wit
 Went on pinterest looking fot inspirations for my specific design for my survey. Like how i want to visualize the grade question.
 
 **Inspiration for layout** 
+
 ![Images](./img/layout1.png)
 
 **Inspiration for grading** 
+
 ![Images](./img/grade.png)
 
 https://codepen.io/keisha-alexander/pen/vYzQzYY
