@@ -14,91 +14,104 @@
 <body>
 
     <header>
-        
-    <form action="" >
-        <input type="checkbox" id="light-mode">
-        <label for="light-mode">Toggle</label>
+        <form action="">
+            <input type="checkbox" id="light-mode">
+            <label for="light-mode">Toggle</label>
+        </form>
 
-    </form>
-    
+
+        <section>
+            <h1>MINOR WEB ENQUÊTE</h1>
+            <p>Hoge School van Amsterdam</p>
+        </section>
+
+
     </header>
 
-    
-    <h1>MINOR WEB ENQUÊTE</h1>
-    <form>
+    <main>
 
-        <label for="dropdown">Choose a subject</label>
-        <select id="dropdown" name="dropdown">
-            <option value="Browser technologies">Browser technologies</option>
-            <option value="Web app froms scratch">Web app froms scratch </option>
-            <option value="Css to the Rescue">Css to the Rescue</option>
-            <option value="Progressive web apps">Progressive web apps </option>
-            <option value="Project week 1">Project week 1 </option>
-            <option value="Project week 2">Project week 2 </option>
-            <option value="Meesterproef ">Meesterproef </option>
-            <option value="Real Time Web">Real Time Web</option>
-            <option value="Human Centered Design">Human Centered Design </option>
-        </select>
+        <form>
 
-
+            <label for="dropdown">Choose a subject</label>
+            <select id="dropdown" name="dropdown">
+                <option value="Browser technologies">Browser technologies</option>
+                <option value="Web app froms scratch">Web app froms scratch </option>
+                <option value="Css to the Rescue">Css to the Rescue</option>
+                <option value="Progressive web apps">Progressive web apps </option>
+                <option value="Project week 1">Project week 1 </option>
+                <option value="Project week 2">Project week 2 </option>
+                <option value="Meesterproef ">Meesterproef </option>
+                <option value="Real Time Web">Real Time Web</option>
+                <option value="Human Centered Design">Human Centered Design </option>
+            </select>
 
 
 
-        <h2>Step 1 </h2>
-        <fieldset>
-            <legend>Fill in your personal information here</legend>
-            <label for="name">Name:
-                <input type="text" id="name" name="name" placeholder="whitney abrah"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="studentnumber">Student number</label>
-                <input type="number" id="number" name="studentnumber"><br><br>
-            </label>
 
-        </fieldset>
+            <h2>Step 1 </h2>
+            <fieldset>
+                <legend>Fill in your personal information here</legend>
+                <label for="name">Name: <br>
+                    <input type="text" id="name" name="name" placeholder="name and surname "><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="name@gmail.com"><br><br>
+                    <label for="studentnumber">Student number</label><br>
+                    <input type="number" id="number" name="studentnumber" placeholder="example:345676789"><br><br>
+                </label>
 
-
-        <h2>Step 2 </h2>
-
-        <fieldset>
-            <legend>About the course</legend>
-            <label for="">Lecturer of the course
-                <input type=""><br><br>
-                <label for="">In which period of the week did you follow this course</label>
-                <input type="text">
-            </label>
-
-        </fieldset>
+            </fieldset>
 
 
-        <h2>Step 3 </h2>
-        <fieldset>
-            <legend>Grade your experience on this course</legend>
-            <label for="">How difficult was this course on a scale from 1 to 10
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio"> <br><br>
-            </label><br><br>
+            <h2>Step 2 </h2>
 
-            <label for="">In which period of the week did you follow this course
-                <input type="text">
+            <fieldset>
+                <legend>About the course</legend>
+                <label for="">Lecturer of the course <br>
+                    <input type=""><br><br>
+                    <label for=""> In which period of the week did you follow this course</label><br>
+                    <input type="text">
+                </label>
 
-            </label>
-
-        </fieldset>
+            </fieldset>
 
 
-    </form>
+            <h2>Step 3 </h2>
+            <fieldset><br>
+                <legend>Grade your experience on this course</legend>
+                <h3></h3>
+                <label for="">How difficult was this course on a scale from 1 to 10? <br><br>
+                    <label for=""><input type="radio" name="grade" id="1">1</label>
+                    <label for=""><input type="radio" name="grade" id="2">2</label>
+                    <label for=""><input type="radio" name="grade" id="3">3</label>
+                    <label for=""><input type="radio" name="grade" id="4">4</label>
+                    <label for=""><input type="radio" name="grade" id="5">5</label>
+                    <label for=""><input type="radio" name="grade" id="6">6</label>
+                    <label for=""><input type="radio" name="grade" id="7">7</label>
+                    <label for=""><input type="radio" name="grade" id="8">8</label>
+                    <label for=""><input type="radio" name="grade" id="9">9</label>
+                    <label for=""><input type="radio" name="grade" id="10">10</label>
+                </label><br><br>
+
+                <label for="">How well did you undertand the course <br><br>
+                    <label for=""><input type="radio" name="">very bad</label>
+                    <label for=""><input type="radio">bad</label>
+                    <label for=""><input type="radio">good</label>
+                    <label for=""><input type="radio">excellent</label>
+                </label><br><br>
+
+            </fieldset>
+            <br><br>
+
+
+            <input class="submit-button" type="submit" name="submit" id="">
+            
+
+        </form>
+
+
+    </main>
+
+
 
 </body>
 
