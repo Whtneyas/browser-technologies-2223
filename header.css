@@ -1,0 +1,230 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+:root {
+  /***Darkmode ***/
+  --darkmode-background-color: #161b22;
+  --darkmode-text-color-icons: #f0f6fc;
+  --pimary-color: #25167a;
+
+
+
+  /***Lightmode **/
+  --lightmode-background-color: #ffff;
+  --lightmode-text-color-icons: #24292e;
+
+
+}
+
+
+header {
+  background-color: var(--pimary-color);
+  padding:1em;
+}
+
+
+
+header input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+header label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 4em;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+header label:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 1.5em;
+  height: 1.7em;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+header input:checked+label {
+  background: grey;
+}
+
+header input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  transition: 2s;
+}
+
+
+
+body:has(#light-mode:checked) {
+  background-color: black;
+}
+
+
+
+body:has(#light-mode:checked) {
+  color: white;
+}
+
+
+section:nth-of-type(1) {
+  padding: 2em;
+  background-color: var(--pimary-color);
+
+
+}
+
+section:nth-of-type(1) h1 {
+  color: white;
+  text-align: center;
+  /* padding: 2em; */
+  background-color: #25167a;
+
+
+}
+
+section:nth-of-type(1) p {
+  text-align: center;
+  color: white
+}
+
+
+main form:nth-of-type(1) {
+  display: grid;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/***Dropdwon **/
+main form:nth-of-type(1) label {
+  font-size: 1.1rem;
+  padding-top: 1em;
+
+}
+
+
+main form:nth-of-type(1) label:nth-of-type(1) {
+  padding: .3em;
+}
+
+select{
+  padding:.6em;
+ 
+
+}
+select:focus {
+  box-shadow :0px 0px 5px var(--pimary-color);
+  transform: scale(1.2)
+}
+
+select option {
+  border:none;
+}
+
+option:hover{
+  color: red;
+}
+
+
+/*** For all inputs**/
+
+h2 {
+  color:var(--pimary-color)
+}
+
+input {
+  border-radius:.5em;
+  border: .1em  solid grey;
+  /* width: 20em;
+  height: 3em; */
+}
+
+/***For all fieldsets**/
+
+
+
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+fieldset {
+  padding: 1em;
+  border-radius: 1em;
+}
+
+fieldset:nth-of-type(1) input {
+  width:17em;
+  height: 2em;
+
+}
+
+
+fieldset:nth-of-type(2) label {
+ padding: 3em;
+  
+}
+
+
+fieldset:nth-of-type(2) input {
+  width:17em;
+  height:2em;
+}
+
+/*Button**/
+.submit-button{
+  background-color: var(--pimary-color);
+  width: 6em;
+  height: 3em;
+  color: white;
+  border: none;
+  justify-self: center;
+  align-self: center;
+}
+  
+        
+
+/**For all fieldset legends **/
+
+
+
+
+
+
+
+
+
+
+/****DESKTOP VERSION****/
+
+
+
+  @media-query(min-width:44em) {
+
+  }
+
+
+
+
+
+
+

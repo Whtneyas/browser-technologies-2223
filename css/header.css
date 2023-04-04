@@ -1,0 +1,400 @@
+body {
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 29px;
+
+ 
+
+
+}
+
+
+
+:root {
+  /***Darkmode ***/
+  --darkmode-background-color: #161b22;
+  --darkmode-text-color-icons: #f0f6fc;
+  --pimary-color: #25167a;
+
+
+
+  /***Lightmode **/
+  --lightmode-background-color: #ffff;
+  --lightmode-text-color-icons: #24292e;
+
+
+}
+
+
+header {
+  margin: 0;
+
+}
+
+header > div {
+  margin-top: 1em;
+  padding: 0;
+
+}
+
+header>div p {
+  line-height: 0;
+
+}
+
+
+h1 {
+  color: var(--pimary-color);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+section:nth-of-type(1) p {
+  text-align: center;
+ 
+}
+
+
+/*****Hamburger-menu***/
+
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.personal-info-next {
+  display: flex;
+  padding-left: 2em;
+}
+
+.personal-info-next a {
+
+  text-decoration: none;
+  color: black;
+  padding: .2em;
+  border-radius: .3em;
+
+
+}
+
+.personal-info-next a:hover {
+
+  background-color: #25167a;
+  color: white;
+  height: 2em;
+}
+
+
+
+.personal-info {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+
+
+
+}
+
+/****Optional**/
+.optional{
+  color: grey;
+  font-style: italic;
+}
+
+.personal-info h3 {
+  color: #25167a;
+  text-align: left;
+
+}
+
+.personal-info legend {
+  font-weight: bold;
+  font-size: 16px;
+  padding: .1em;
+
+}
+
+
+.personal-info,
+h2,
+label {
+  gap: .5em;
+}
+
+
+.personal-info input {
+  width: 17em;
+  height: 1em;
+  padding: 0.5em;
+  margin-top: 0.7em;
+  border: none;
+  border-bottom: 1px solid black;
+
+
+
+}
+
+.personal-info input:focus {
+  outline: none;
+  border-bottom: 1.1px solid var(--pimary-color);
+  box-shadow: 0px 0px 2px var(--pimary-color);
+  border-radius: 1em;
+}
+
+
+/*******************************ALL PAGES ***************************************/
+/***Navigation Next and prievious***/
+nav {
+  display: flex;
+  /* padding: 2em; */
+  justify-content: center;
+  gap: 3em;
+  text-decoration: none;
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  height: 1.5em;
+  padding: .5em;
+
+}
+
+nav a:hover {
+  background-color: #25167a;
+  color: white;
+}
+
+
+/****Forms*****/
+
+main h2 {
+  text-align: center;
+
+}
+
+h3 {
+  color: #25167a;
+  font-size: 1.4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 1rem;
+  max-width: 10em;
+  gap: 1em;
+
+
+
+
+
+}
+
+/** Highlight the name of the lectureres**/
+i {
+  font-weight: bold;
+}
+
+fieldset {
+  border-radius: 1em;
+  border: none;
+  
+ 
+}
+
+form h3,
+p {
+  color: #25167a;
+  text-align: center;
+
+
+}
+
+form legend {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+form fieldset:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form fieldset:nth-of-type(1) input {
+  width: 20em;
+  height: 7em;
+}
+
+form fieldset:nth-of-type(1) input:focus {
+  background-color: #25167a28;
+  outline: none;
+  border: none;
+  border-radius: .3em;
+}
+
+.input-text2 {
+  width: 20em;
+  height: 7em;
+}
+
+
+.input-text2:focus {
+  background-color: #25167a1a;
+  outline: none;
+  border: none;
+  border-radius: .3em;
+}
+
+.grade-scale {
+  background:#25167a2c;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 3px  inset;
+
+}
+
+.grade-scale input[type="radio"] {
+  opacity: 0;
+  flex-wrap: wrap;
+  width: 0;
+  height: 0;
+}
+
+.grade-scale label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.grade-scale span { */
+  /* background-color:rgb(229, 229, 229); */
+  /* 
+
+  box-shadow: 0 px 0px 2px darkgray inset;
+  box-shadow: 0px 0px 3px black;
+  font-size: .7rem;
+  font-weight: 600;
+  width: 3em;
+  height: 2.1em;
+  text-align: center;
+  border-radius: 50%;
+  width: 2em;
+  
+
+} */
+
+.grade-scale label > span {
+  display: inline-block;
+  width: 16px;
+  padding: .2em;
+  box-shadow: 0 px 0px 2px darkgray inset;
+  background-color: white;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 16px;
+}
+/* input[type="radio"]:checked +.radio-button {
+  background-color: blue;
+  color: white;
+} */
+
+
+button{
+  background-color: #25167a;
+  width: 7em;
+  color: white;
+  border: none;
+ margin: auto;
+ border-radius: .7em;
+  padding: 1em;
+  align-items: center;
+
+}
+
+/**Css input validation***/
+
+
+
+
+
+
+@media(min-width:44em) {
+
+  .personal-info {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .personal-info,
+  h2,
+  label {
+    gap: 1em;
+  }
+
+
+  .personal-info input {
+    width: 25em;
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid black;
+
+  }
+
+
+  form fieldset:nth-of-type(1) input {
+    width: 40em;
+  }
+
+  .input-text2 {
+    width: 40em;
+  }
+
+
+
+  .grade-scale {
+    background:#25167a2c;
+    width: 37em;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 3px  inset;
+  
+  }
+  
+.grade-scale span {
+  /* background-color:rgb(229, 229, 229); */
+ 
+  font-size: 1rem;
+  font-weight: 600;
+
+  width: 2em;
+  height: 2em;
+  text-align: center;
+
+  
+
+}
+
+
+
+}
