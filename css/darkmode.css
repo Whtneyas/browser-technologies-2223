@@ -1,0 +1,60 @@
+
+.dark-mode {
+    display: flex;
+    padding: 1em;
+
+
+}
+
+
+body:has(#dark-mode:checked) {
+    background-color: white;
+}
+
+body:has(#dark-mode:checked)   main {
+    color:white;
+    background-color: black;
+}
+
+
+.dark-mode input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+
+  }
+  
+  .dark-mode label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 4em;
+    height: 30px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  .dark-mode label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 1.5em;
+    height: 1.7em;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  .dark-mode input:checked + label {
+    background: var(--darkmode-background-color);
+  }
+  
+  .dark-mode input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    transition: 2s;
+  }
+
+
