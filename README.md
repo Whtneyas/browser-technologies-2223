@@ -73,6 +73,21 @@ HTML provides a few built-in form validation attributes that can be added to for
 
 <img width="606" alt="image" src="https://user-images.githubusercontent.com/90154152/229870043-3cb7b42e-5288-4f0b-8dcc-3f77db5e6c5e.png">
 
+### Form validation with CSS
+
+Form validation in CSS can be done using the :valid and :invalid pseudo-classes. When a user inputs data into a form field, these pseudo-classes can be used to style the input based on whether the data entered is valid or not.
+
+
+I used the valid and invalid pseudo classes for my inputs with the has selector. 
+
+
+
+
+
+
+
+
+
 
 
 
