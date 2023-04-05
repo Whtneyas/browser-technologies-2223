@@ -8,9 +8,7 @@
     <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/menu.css">
-  <link rel="stylesheet" href="./css/darkmode.css">
-   
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/darkmode.css">
     <title>Minor Web enquête</title>
 
 </head>
@@ -18,7 +16,6 @@
 <body>
 
     <header>
-
         <nav class="navbar">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -37,75 +34,55 @@
                 <li><a href="../html/human-centered-design.html">Step 6</a></li>
                 <li><a href="../html/meester-proof.html">Step 7</a></li>
             </ul>
+
+            <form action="" class="dark-mode">
+                <input type="checkbox" id="dark-mode">
+                <label for="dark-mode">Toggle</label>
+
+            </form>
         </nav>
-
-        <form action="" class="dark-mode">
-            <input type="checkbox" id="dark-mode">
-            <label for="dark-mode">Toggle</label>
-
-        </form>
-
-
     </header>
 
-    <nav class="personal-info-next">
-        <p>1/8</p>
-        <a href="../html/webappfromscratch.html">Next</a>
-
-    </nav>
-
     <main>
-        <section>
-            <h1>MINOR WEB ENQUÊTE</h1>
-            <p>Hoge School van Amsterdam</p>
-        </section>
+        <h1>MINOR WEB ENQUÊTE</h1>
 
+        <form id="personal-info">
+            <h2>Personal Information </h2>
+            <fieldset>
+                <legend>Would you kindly feel in your personal information?</legend>
 
-        <form class="personal-info">
-            <h3>Personal Information </h3>
+                <label for="name">Name: <span class="optional">(optional)</span> <br>
 
-            <legend>Would you kindly feel in your personal information?</legend>
+                    <input type="text" id="name" name="name" placeholder="name and surname "><br><br>
+                    <span></span>
 
-            <label for="name">Name: <span class="optional">(optional)</span> <br>
+                </label>
 
-                <input type="text" id="name" name="name" placeholder="name and surname "><br><br>
+                <label for="email">Email: <span class="optional">(optional)</span> <br>
+                    <input type="email" id="email" name="email" placeholder="name@gmail.com" required> <br><br>
+                    <span></span>
+                </label>
 
-            </label>
-
-            <label for="email">Email: <span>(optional)</span> <br>
-                <input type="email" id="email" name="email" placeholder="name@gmail.com" required> <br><br>
-                <span class="error" id="email-error"></span>
-            </label>
-
-            <label for="studentnumber">Student number: <span>(optional)</span> <br>
-                <input type="text" id="student-number" name="studentnumber" placeholder="contains 9 numbers"><br><br>
-            </label><br>
-
+                <label for="student Id ">Student number: <span class="optional">(optional)</span> <br>
+                    <input type="text" id="student-id" name="student-id" placeholder="contains 9 numbers"
+                        pattern="[0-9]{9}"><br><br>
+                    <span></span>
+                </label><br>
+            </fieldset>
         </form>
-        <button type="submit">Save</button>
+
+
+
+        <button type="submit">
+            <a href="./html/webappfromscratch.html">Next</a>
+
+        </button>
+
 
 
     </main>
 
-    <style>
-        input:invalid+.error::before {
-            content: "Invalid input. Please enter a valid input.";
-            color: red;
-        }
-
-        input:valid+.error::before {
-            content: "Input is valid";
-            color: green;
-        }
-
-        .error::before {
-            display: block;
-            margin-top: 5px;
-            font-size: 12px;
-        }
-    </style>
-
-
+<script src="/script.js"></script>
 </body>
 
 </html>

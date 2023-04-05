@@ -1,40 +1,122 @@
-<form class="personal-info">
-  <h3>Personal Information</h3>
+<div class="grade-scale">
+  <input type="radio" name="grade3" id="1" value="1" hidden>
+  <label for="1"><span>1</span></label>
+  <input type="radio" name="grade3" id="2" value="2" hidden>
+  <label for="2"><span>2</span></label>
+  <input type="radio" name="grade3" id="3" value="3" hidden>
+  <label for="3"><span>3</span></label>
+  <input type="radio" name="grade3" id="4" value="4" hidden>
+  <label for="4"><span>4</span></label>
+  <input type="radio" name="grade3" id="5" value="5" hidden>
+  <label for="5"><span>5</span></label>
+  <input type="radio" name="grade3" id="6" value="6" hidden>
+  <label for="6"><span>6</span></label>
+  <input type="radio" name="grade3" id="7" value="7" hidden>
+  <label for="7"><span>7</span></label>
+  <input type="radio" name="grade3" id="8" value="8" hidden>
+  <label for="8"><span>8</span></label>
+  <input type="radio" name="grade3" id="9" value="9" hidden>
+  <label for="9"><span>9</span></label>
+  <input type="radio" name="grade3" id="10" value="10" hidden>
+  <label for="10"><span>10</span></label>
+</div>
 
-  <legend>Would you kindly fill in your personal information?</legend>
-
-  <label for="name">Name: <span class="optional">(optional)</span></label>
-  <input type="text" id="name" name="name" placeholder="name and surname"><br><br>
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
-  <span class="error" id="email-error"></span><br><br>
-
-  <label for="studentnumber">Student number:</label>
-  <input type="text" id="student-number" name="studentnumber" placeholder="contains 9 numbers" pattern="[0-9]{9}">
-  <span class="error" id="studentnumber-error"></span><br><br>
-
-  <button type="submit">Save</button>
-</form>
 
 <style>
-  input:invalid + .error::before {
-  content: "Please fill in the correct email address";
-  color: red;
-  border-radius: none;
-  outline: none;
-  
+  .grade-scale input[type="radio"] {
+  display: none;
+  border: none;
 }
 
-input:valid + .error::before {
-  content: "Well done";
-  color: green;
+.grade-scale label {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #ddd;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.error::before {
-  display: block;
-  margin-top: 5px;
-  font-size: 12px;
+.grade-scale input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.grade-scale label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.grade-scale input[type="radio"]:checked + label:before {
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 </style>
+
+
+fire fox 
+
+/**Firefox validation**/
+/* 
+.personal-info label input[type="text"]:valid+span::after {
+  content: '\2713';
+  color: green;
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-2.3em);
+  right: 3em;
+}
+
+.personal-info label input[type="text"]:invalid+span::after {
+  content: 'Voer maar wat in. ';
+  position: absolute;
+  transform: translateY(.5em);
+  font-size: 14px;
+
+} */
+
+/* Voor de email */
+/* .personal-info label input[type="email"]:valid+span::after {
+  content: '\2713';
+  color: green;
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-2.3em);
+  right: 3em;
+}
+
+.personal-info label input[type="email"]:invalid+span::after {
+  content: 'Voer maar wat in. ';
+  position: absolute;
+  transform: translateY(.5em);
+  font-size: 14px;
+
+} */
+
+/* 
+.valid-data {
+  border: 1px solid green;
+  border-bottom: 4px solid green ;
+}
+
+textarea.valid-data::after {
+  content: 'Wat een goeie mening zeg!';
+  position: absolute;
+  color: var(--tekst-kleur);
+  transform: translateY(2em);
+
+}
+
+.results1,
+.results2,
+.results3 {
+  margin-top: .5em;
+} */

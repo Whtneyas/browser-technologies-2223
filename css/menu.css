@@ -26,7 +26,7 @@
     width: 80%;
     border-radius: 1em;
     height: .2em;
-    background-color: #000;
+    background-color:plum;
     position: absolute;
     left: 0;
     transition: transform 0.2s ease-in-out;
@@ -80,14 +80,14 @@
     margin: 0;
     padding: .7em;
     border-bottom: .1px solid grey;
-    background-color: var(--pimary-color);
-    color: white;
+    background-color:plum;
+
     box-shadow: 0px 0px 2px white;
 
 }
 
 .menu li a {
-    color: white
+    color: var(--pimary-color);
 }
 
 .menu li:hover {

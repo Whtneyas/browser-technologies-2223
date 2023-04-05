@@ -5,16 +5,51 @@
 
 
 }
+ul.menu {
+  background-color: transparent;
+}
 
 
 body:has(#dark-mode:checked) {
     background-color: white;
 }
 
-body:has(#dark-mode:checked)   main {
-    color:white;
-    background-color: black;
+
+body:has(#dark-mode:checked) main  {
+  /* background-color: yellow; */
+  background-color: var(--darkmode-background-color);
+  color:white;
+
 }
+body:has(#dark-mode:checked) header{
+  background-color: var(--darkmode-background-color);
+}
+
+
+body:has(#dark-mode:checked) .navbar{
+    color:rgb(129, 126, 126);
+    background-color:var(--darkmode-background-color);
+    padding-left: 1em;
+    /* border-bottom: 10em solid rgba(137, 43, 226, 0.071); */
+   
+}
+
+body:has(#dark-mode:checked) .navbar .menu-icon > span{
+  background-color: white;
+}
+
+body:has(#dark-mode:checked) .navbar .menu > li {
+  background-color:rgb(7, 1, 12);
+}
+
+body:has(#dark-mode:checked) .navbar .menu > li > a{
+  color:rgb(177, 174, 174);
+}
+
+
+
+
+
 
 
 .dark-mode input[type=checkbox]{
@@ -27,9 +62,9 @@ body:has(#dark-mode:checked)   main {
   .dark-mode label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 4em;
-    height: 30px;
-    background: grey;
+    width: 3em;
+    height: 17.5px;
+    background: plum;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -40,9 +75,9 @@ body:has(#dark-mode:checked)   main {
     position: absolute;
     top: 1px;
     left: 1px;
-    width: 1.5em;
-    height: 1.7em;
-    background: #fff;
+    width: 1em;
+    height: 1em;
+    background: purple;
     border-radius: 90px;
     transition: 0.3s;
   }
@@ -55,6 +90,10 @@ body:has(#dark-mode:checked)   main {
     left: calc(100% - 5px);
     transform: translateX(-100%);
     transition: 2s;
+  }
+
+
+  @media(min-width:44em) {
   }
 
 

@@ -40,11 +40,11 @@ I would want to be able to fill in a survey about the minor Web development. wit
 
 Went on pinterest looking fot inspirations for my specific design for my survey. Like how i want to visualize the grade question.
 
-**Inspiration for layout** 
+**Inspiration for layout**
 
 ![Images](./img/layout1.png)
 
-**Inspiration for grading** 
+**Inspiration for grading**
 
 ![Images](./img/grade.png)
 
@@ -52,8 +52,23 @@ Went on pinterest looking fot inspirations for my specific design for my survey.
 
 ![Images](./img/grade3.png)
 
+## Process
+
+### Saving users info using local storage
+
+Local storage is a web storage mechanism that allows web application to store key value pairs in the user's web browser. With localStorage you can store and retrieve data on the client side without the need of the server. So that is what i am going to do since i am not using any server.
+
+
+
+
+
+
+## Testing
+
+###
+Darkmode effect not working in Firefox with has()selector 
+I was using firefox as my browser. I realised that the has selector doesn't work in firefox. I wanted to use the has selector to create a darkmode effect. 
 
 ### Resources
-
 
 

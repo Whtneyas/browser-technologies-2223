@@ -8,10 +8,11 @@
     <title>WebAppFromScratch</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+
 </head>
 
 <body>
-
 
     <header>
         <nav class="navbar">
@@ -23,7 +24,7 @@
             </label>
 
             <ul class="menu">
-                <li><a href="../html/index.html">Personal Info</a></li>
+                <li><a href="/index.html">Personal Info</a></li>
                 <li><a href="../html/webappfromscratch.html">Step 1</a></li>
                 <li><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
                 <li><a href="../html/browser-technologies.html">Step 3 </a></li>
@@ -32,18 +33,18 @@
                 <li><a href="../html/human-centered-design.html">Step 6</a></li>
                 <li><a href="../html/meester-proof.html">Step 7</a></li>
             </ul>
+
+            <form action="" class="dark-mode">
+                <input type="checkbox" id="dark-mode">
+                <label for="dark-mode">Toggle</label>
+
+            </form>
         </nav>
-
-        <div>
-            <h1>MINOR WEB ENQUÊTE</h1>
-            <p>Hoge School van Amsterdam</p>
-
-        </div>
-
     </header>
 
+
     <main>
-        <form action="">
+        <form action="./webappfromscratch.html">
             <h3>Web App From Scratch </h3>
 
             <fieldset>
@@ -54,7 +55,7 @@
 
                 <label for="">1. What is your opinion of the lectures delivered by Robert Spier and Joost Faber, or the
                     explanations provided during the course?"<br><br>
-                    <input type="text" placeholder="Write your opnion here">
+                    <input type="text" placeholder="Write your opnion here......">
                 </label>
             </fieldset>
 
@@ -68,20 +69,30 @@
                 <label for=""> Grade on a scale of 1 to 10.</label> <br>
 
                 <div class="grade-scale">
-                    <label for=""><input type="radio" name="grade3" id="1"><span>1</span></label>
-                    <label for=""><input type="radio" name="grade3" id="2"><span>2</span></label>
-                    <label for=""><input type="radio" name="grade3" id="3"><span>3</span></label>
-                    <label for=""><input type="radio" name="grade3" id="4"><span>4</span></label>
-                    <label for=""><input type="radio" name="grade3" id="5"><span>5</span></label>
-                    <label for=""><input type="radio" name="grade3" id="6"><span>6</span></label>
-                    <label for=""><input type="radio" name="grade3" id="7"><span>7</span></label>
-                    <label for=""><input type="radio" name="grade3" id="8"><span>8</span></label>
-                    <label for=""><input type="radio" name="grade3" id="9"><span>9</span></label>
-                    <label for=""><input type="radio" name="grade3" id="10"><span>10</span></label><br><br>
+                    <input type="radio" name="grade1" id="q1-1" value="1" hidden>
+                    <label for="q1-1"><span>1</span></label>
+                    <input type="radio" name="grade1" id="q1-2" value="2" hidden>
+                    <label for="q1-2"><span>2</span></label>
+                    <input type="radio" name="grade1" id="q1-3" value="3" hidden>
+                    <label for="q1-3"><span>3</span></label>
+                    <input type="radio" name="grade1" id="q1-4" value="4" hidden>
+                    <label for="q1-4"><span>4</span></label>
+                    <input type="radio" name="grade1" id="q1-5" value="5" hidden>
+                    <label for="q1-5"><span>5</span></label>
+                    <input type="radio" name="grade1" id="q1-6" value="6" hidden>
+                    <label for="q1-6"><span>6</span></label>
+                    <input type="radio" name="grade1" id="q1-7" value="7" hidden>
+                    <label for="q1-7"><span>7</span></label>
+                    <input type="radio" name="grade1" id="q1-8" value="8" hidden>
+                    <label for="q1-8"><span>8</span></label>
+                    <input type="radio" name="grade1" id="q1-9" value="9" hidden>
+                    <label for="q1-9"><span>9</span></label>
+                    <input type="radio" name="grade1" id="q1-10" value="10" hidden>
+                    <label for="q1-10"><span>10</span></label>
                 </div>
 
                 <label for="">3. Explain why <br> <br>
-                    <input type="text" name="" id="" class="input-text2" placeholder="Write your opnion here"><br>
+                    <input type="text" name="" id="" placeholder="Write your opinion here........."><br>
                 </label> <br>
 
             </fieldset>
@@ -91,22 +102,32 @@
             <fieldset>
                 <label for=""> 4.How well did you undertand Web app from scratch </label><br><br>
                 <label for=""> Grade on a scale of 1 to 10.</label> <br>
-               
+
                 <div class="grade-scale">
-                    <label for=""><input type="radio" name="grade3" id="1"><span>1</span></label>
-                    <label for=""><input type="radio" name="grade3" id="2"><span>2</span></label>
-                    <label for=""><input type="radio" name="grade3" id="3"><span>3</span></label>
-                    <label for=""><input type="radio" name="grade3" id="4"><span>4</span></label>
-                    <label for=""><input type="radio" name="grade3" id="5"><span>5</span></label>
-                    <label for=""><input type="radio" name="grade3" id="6"><span>6</span></label>
-                    <label for=""><input type="radio" name="grade3" id="7"><span>7</span></label>
-                    <label for=""><input type="radio" name="grade3" id="8"><span>8</span></label>
-                    <label for=""><input type="radio" name="grade3" id="9"><span>9</span></label>
-                    <label for=""><input type="radio" name="grade3" id="10"><span>10</span></label><br><br>
+                    <input type="radio" name="grade2" id="q2-1" value="1" hidden>
+                    <label for="q2-1"><span>1</span></label>
+                    <input type="radio" name="grade2" id="q2-2" value="2" hidden>
+                    <label for="q2-2"><span>2</span></label>
+                    <input type="radio" name="grade2" id="q2-3" value="3" hidden>
+                    <label for="q2-3"><span>3</span></label>
+                    <input type="radio" name="grade2" id="q2-4" value="4" hidden>
+                    <label for="q2-4"><span>4</span></label>
+                    <input type="radio" name="grade2" id="q2-5" value="5" hidden>
+                    <label for="q2-5"><span>5</span></label>
+                    <input type="radio" name="grade2" id="q2-6" value="6" hidden>
+                    <label for="q2-6"><span>6</span></label>
+                    <input type="radio" name="grade2" id="q2-7" value="7" hidden>
+                    <label for="q2-7"><span>7</span></label>
+                    <input type="radio" name="grade2" id="q2-8" value="8" hidden>
+                    <label for="q2-8"><span>8</span></label>
+                    <input type="radio" name="grade2" id="q2-9" value="9" hidden>
+                    <label for="q2-9"><span>9</span></label>
+                    <input type="radio" name="grade2" id="q2-10" value="10" hidden>
+                    <label for="q2-10"><span>10</span></label>
                 </div>
 
                 <label for="">5. Explain why <br><br>
-                    <input type="text" name="" id="" class="input-text2" placeholder="Write your opinion here">
+                    <input type="text" name="" id="" placeholder="Write your opinion here.......">
                 </label><br>
             </fieldset>
 
@@ -118,36 +139,52 @@
                 <label for=""> Grade on a scale of 1 to 10.</label> <br>
 
                 <div class="grade-scale">
-                    <label for=""><input type="radio" name="grade3" id="1"><span class="radio-button">1</span></label>
-                    <label for=""><input type="radio" name="grade3" id="2"><span>2</span></label>
-                    <label for=""><input type="radio" name="grade3" id="3"><span>3</span></label>
-                    <label for=""><input type="radio" name="grade3" id="4"><span>4</span></label>
-                    <label for=""><input type="radio" name="grade3" id="5"><span>5</span></label>
-                    <label for=""><input type="radio" name="grade3" id="6"><span>6</span></label>
-                    <label for=""><input type="radio" name="grade3" id="7"><span>7</span></label>
-                    <label for=""><input type="radio" name="grade3" id="8"><span>8</span></label>
-                    <label for=""><input type="radio" name="grade3" id="9"><span>9</span></label>
-                    <label for=""><input type="radio" name="grade3" id="10"><span>10</span></label><br><br>
+                    <input type="radio" name="grade3" id="q3-1" value="1" hidden>
+                    <label for="q3-1"><span>1</span></label>
+                    <input type="radio" name="grade3" id="q3-2" value="2" hidden>
+                    <label for="q3-2"><span>2</span></label>
+                    <input type="radio" name="grade3" id="q3-3" value="3" hidden>
+                    <label for="q3-3"><span>3</span></label>
+                    <input type="radio" name="grade3" id="q3-4" value="4" hidden>
+                    <label for="q3-4"><span>4</span></label>
+                    <input type="radio" name="grade3" id="q3-5" value="5" hidden>
+                    <label for="q3-5"><span>5</span></label>
+                    <input type="radio" name="grade3" id="q3-6" value="6" hidden>
+                    <label for="q3-6"><span>6</span></label>
+                    <input type="radio" name="grade3" id="q3-7" value="7" hidden>
+                    <label for="q3-7"><span>7</span></label>
+                    <input type="radio" name="grade3" id="q3-8" value="8" hidden>
+                    <label for="q3-8"><span>8</span></label>
+                    <input type="radio" name="grade3" id="q3-9" value="9" hidden>
+                    <label for="q3-9"><span>9</span></label>
+                    <input type="radio" name="grade3" id="q3-10" value="10" hidden>
+                    <input type="radio" name="grade3" id="q3-10" value="10" hidden>
+                    <label for="q3-10"><span>10</span></label>
                 </div>
 
                 <label for="">5. Explain why <br><br>
-                    <input type="text" name="" id="" class="input-text2" placeholder="Write youre opinion here">
+                    <input type="text" name="" id=""  placeholder="Write youre opinion here.......">
                 </label><br>
 
             </fieldset> <br>
 
-             <button type="submit">Save</button>
+            <div class="navigation-buttons">
+                <button>
+
+                    <a href="/index.html">previous</a>
+
+                </button>
+
+                <button type="submit">
+
+                    <a href="./html/css-to-the-rescue">next</a>
+
+                </button>
 
 
-
+            </div>
 
         </form>
-
-        <nav>
-            <a href="./index.html">Previous</a>
-            <p>2/8</p>
-            <a href="./css-to-the-rescue.html">Next</a>
-        </nav>
 
     </main>
 

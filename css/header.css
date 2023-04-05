@@ -4,7 +4,6 @@ body {
   padding: 0;
   line-height: 29px;
 
- 
 
 
 }
@@ -27,12 +26,17 @@ body {
 }
 
 
+
+
 header {
   margin: 0;
+  max-height: 50%;
+  background-color: rgba(221, 160, 221, 0.208);
+
 
 }
 
-header > div {
+header>div {
   margin-top: 1em;
   padding: 0;
 
@@ -41,6 +45,11 @@ header > div {
 header>div p {
   line-height: 0;
 
+}
+
+header .navbar {
+  padding: 1em;
+  background-color: purple;
 }
 
 
@@ -52,7 +61,6 @@ h1 {
 
 section:nth-of-type(1) p {
   text-align: center;
- 
 }
 
 
@@ -65,25 +73,30 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(221, 160, 221, 0.208);
+
 
 }
 
-.personal-info-next {
+footer {
   display: flex;
-  padding-left: 2em;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
 }
 
-.personal-info-next a {
+#personal-info-next {
+  background-color: #25167a;
+}
 
+#personal-info-next a {
   text-decoration: none;
-  color: black;
-  padding: .2em;
-  border-radius: .3em;
-
+  color: white;
 
 }
 
-.personal-info-next a:hover {
+#personal-info-next a:hover {
 
   background-color: #25167a;
   color: white;
@@ -92,7 +105,7 @@ main {
 
 
 
-.personal-info {
+#personal-info {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -104,64 +117,116 @@ main {
 }
 
 /****Optional**/
-.optional{
+.optional {
   color: grey;
   font-style: italic;
 }
 
-.personal-info h3 {
+#personal-info h3 {
   color: #25167a;
   text-align: left;
 
 }
 
-.personal-info legend {
-  font-weight: bold;
+#personal-info legend {
+  font-weight: 500;
   font-size: 16px;
   padding: .1em;
 
 }
 
 
-.personal-info,
+#personal-info,
 h2,
 label {
   gap: .5em;
 }
 
 
-.personal-info input {
+#personal-info input {
   width: 17em;
   height: 1em;
   padding: 0.5em;
   margin-top: 0.7em;
   border: none;
-  border-bottom: 1px solid black;
+  border-radius: .2em;
+
 
 
 
 }
 
-.personal-info input:focus {
-  outline: none;
-  border-bottom: 1.1px solid var(--pimary-color);
-  box-shadow: 0px 0px 2px var(--pimary-color);
-  border-radius: 1em;
+#personal-info input:focus {
+  outline-style: dashed;
+  outline-width: .1em;
+  outline-color: purple;
+  box-shadow: 0px 0px 4px purple;
+
 }
+
+legend {
+  font-weight: 200;
+}
+
+
+/***Validation personal information**/
+
+#personal-info input[type="text"]:valid,
+input[type="email"]:valid {
+  border: 1px solid green;
+  border-bottom: 3px solid green;
+}
+
+
+#personal-info input[type="text"]:invalid,
+input[type="email"]:invalid {
+  border: 3px solid rgb(193, 8, 8);
+  border-bottom: 1px solid rgb(193, 8, 8);
+}
+
+#personal-info input:required {
+  border: 1px solid rgb(193, 8, 8);
+  border-bottom: 4px solid rgb(193, 8, 8);
+}
+
+
+#personal-info label:has(input[type="text"]:valid)::after {
+  content: 'well done';
+  color: green;
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-3.7em);
+  right: 3em;
+}
+
+
+
+#personal-info label:has(input[type="email"]:valid)::after {
+  content: 'well done';
+  color: green;
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-2em);
+  right: 30em;
+}
+
+
 
 
 /*******************************ALL PAGES ***************************************/
 /***Navigation Next and prievious***/
-nav {
+header nav {
   display: flex;
   /* padding: 2em; */
   justify-content: center;
   gap: 3em;
   text-decoration: none;
-  background-color: white;
+
+
+
 }
 
-nav a {
+header nav a {
   text-decoration: none;
   color: black;
   height: 1.5em;
@@ -169,7 +234,7 @@ nav a {
 
 }
 
-nav a:hover {
+header nav a:hover {
   background-color: #25167a;
   color: white;
 }
@@ -178,7 +243,9 @@ nav a:hover {
 /****Forms*****/
 
 main h2 {
-  text-align: center;
+  line-height: 0;
+  font-size: 1.2rem;
+
 
 }
 
@@ -196,8 +263,7 @@ form {
   font-size: 1rem;
   max-width: 10em;
   gap: 1em;
-
-
+  max-width: 50%;
 
 
 
@@ -211,8 +277,8 @@ i {
 fieldset {
   border-radius: 1em;
   border: none;
-  
- 
+
+
 }
 
 form h3,
@@ -228,109 +294,138 @@ form legend {
   font-size: 1.3rem;
 }
 
-form fieldset:nth-of-type(1) {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
-form fieldset:nth-of-type(1) input {
-  width: 20em;
-  height: 7em;
-}
-
-form fieldset:nth-of-type(1) input:focus {
+form fieldset input[type="text"]:focus {
   background-color: #25167a28;
-  outline: none;
+  outline-style: dashed;
+  outline-color: purple;
+  outline-width: .1em;
   border: none;
   border-radius: .3em;
 }
 
-.input-text2 {
-  width: 20em;
-  height: 7em;
+
+form input[type="text"] {
+  width: 15em;
+  height: 5em;
 }
 
 
-.input-text2:focus {
-  background-color: #25167a1a;
-  outline: none;
-  border: none;
-  border-radius: .3em;
-}
-
-.grade-scale {
-  background:#25167a2c;
+ .grade-scale {
+  background:rgba(221, 160, 221, 0.257);
   padding: 4px;
   display: flex;
+  font-size: .9rem;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 3px  inset;
+ 
 
 }
 
+
 .grade-scale input[type="radio"] {
-  opacity: 0;
-  flex-wrap: wrap;
-  width: 0;
-  height: 0;
+  display: none;
+  border: none;
 }
 
 .grade-scale label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* 
-.grade-scale span { */
-  /* background-color:rgb(229, 229, 229); */
-  /* 
-
-  box-shadow: 0 px 0px 2px darkgray inset;
-  box-shadow: 0px 0px 3px black;
-  font-size: .7rem;
-  font-weight: 600;
-  width: 3em;
-  height: 2.1em;
-  text-align: center;
-  border-radius: 50%;
-  width: 2em;
-  
-
-} */
-
-.grade-scale label > span {
   display: inline-block;
-  width: 16px;
-  padding: .2em;
-  box-shadow: 0 px 0px 2px darkgray inset;
-  background-color: white;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid grey;
-  margin-left: 10px;
-  cursor: pointer;
   text-align: center;
-  line-height: 16px;
+  padding: 4px 8px;
+  font-size: .7rem;
+  font-weight: bold;
+  margin: 5px;
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
 }
-/* input[type="radio"]:checked +.radio-button {
-  background-color: blue;
-  color: white;
+
+/* .grade-scale input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
 } */
 
+.grade-scale label:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  border-radius: 50%;
+}
 
-button{
+
+.grade-scale input[type ="radio"]:checked + label{
+  background-color: purple;
+}
+
+
+/**Buttons**/
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+}
+
+button {
   background-color: #25167a;
-  width: 7em;
   color: white;
   border: none;
- margin: auto;
- border-radius: .7em;
-  padding: 1em;
+  margin: auto;
+  border-radius: .2em;
+  padding: .7em;
   align-items: center;
-
+  
 }
 
-/**Css input validation***/
+button,
+a {
+  color: white;
+  text-decoration: none
+}
+
+
+/****Validation for the courses**/
+
+form input[type="text"]:valid
+ {
+  border: 1px solid green;
+  border-bottom: 3px solid green;
+}
+
+
+form input[type="text"]:invalid {
+  border: 3px solid rgb(193, 8, 8);
+  border-bottom: 1px solid rgb(193, 8, 8);
+}
+
+form input:required {
+  border: 1px solid rgb(193, 8, 8);
+  border-bottom: 4px solid rgb(193, 8, 8);
+}
+
+
+form label:has(input[type="text"]:valid)::after {
+  content: 'well done';
+  color: green;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bold;
+  transform: translateY(2em);
+  right: 11em;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -339,21 +434,35 @@ button{
 
 @media(min-width:44em) {
 
-  .personal-info {
+  header .navbar {
+    /* padding: 1em; */
+    background-color: purple;
+
+  }
+
+
+  header .navbar li {
+    background-color: plum;
+    border: none;
+  }
+
+
+  #personal-info {
     display: grid;
     align-items: center;
     justify-content: center;
 
+
   }
 
-  .personal-info,
+  #personal-info,
   h2,
   label {
     gap: 1em;
   }
 
 
-  .personal-info input {
+  #personal-info input {
     width: 25em;
     height: 2em;
     border: none;
@@ -361,40 +470,62 @@ button{
 
   }
 
+  #personal-info label:has(input[type="text"]:valid)::after {
+    content: 'well done';
+    color: green;
+    position: absolute;
+    font-weight: bold;
+    transform: translateY(-4.3em);
+    right: 30em;
+  }
 
-  form fieldset:nth-of-type(1) input {
+
+
+  #personal-info label:has(input[type="email"]:valid)::after {
+    content: 'well done';
+    color: green;
+    position: absolute;
+    font-weight: bold;
+    transform: translateY(-4.3em);
+    right: 30em;
+  }
+
+
+  form input[type="text"] {
     width: 40em;
+    height: 7em;
   }
 
-  .input-text2 {
-    width: 40em;
-  }
-
-
-
-  .grade-scale {
-    background:#25167a2c;
-    width: 37em;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 0px 0px 3px  inset;
-  
+  form input::placeholder{
+    position: absolute;
+    padding: 2px;
+    color: grey;
+    bottom: 5em;
   }
   
-.grade-scale span {
-  /* background-color:rgb(229, 229, 229); */
+
+  .navigation-buttons {
+    padding: 3em;
+    margin-bottom: 5em;
+  }
+
+  button {
+    padding: 1em;
+
+  }
+
+  button:hover {
+    background-color: purple;
+    padding: 1em;
+
+  }
+
+
+  
+form label:has(input[type="text"]:valid)::after {
+  transform: translateY(4em);
+  right:27em;
  
-  font-size: 1rem;
-  font-weight: 600;
-
-  width: 2em;
-  height: 2em;
-  text-align: center;
-
-  
-
 }
-
-
 
 }
