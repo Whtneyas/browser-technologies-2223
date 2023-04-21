@@ -5,106 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CssToTheRescue</title>
+    <title>WebAppFromScratch</title>
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+
 </head>
 
 <body>
 
-
-
     <header>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-        <form action="">
-            <input type="checkbox" id="light-mode">
-            <label for="light-mode">Toggle</label>
-        </form>
+            <ul class="menu">
+                <li><a href="/index.html">Personal Info</a></li>
+                <li><a href="../html/webappfromscratch.html">Step 1</a></li>
+                <li><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
+                <li><a href="../html/browser-technologies.html">Step 3 </a></li>
+                <li><a href="../html/progressive-web-apps.html">Step 4 </a></li>
+                <li><a href="../html/real-time-web.html">Step 5 </a></li>
+                <li><a href="../html/human-centered-design.html">Step 6</a></li>
+                <li><a href="../html/meester-proof.html">Step 7</a></li>
+            </ul>
 
+            <form action="" class="dark-mode">
+                <input type="checkbox" id="dark-mode">
+                <label for="dark-mode">Toggle</label>
 
-        <section>
-            <h1>MINOR WEB ENQUÊTE</h1>
-            <p>Hoge School van Amsterdam</p>
-        </section>
-
-
+            </form>
+        </nav>
     </header>
 
 
-
-
-
-    <nav>
-        <a href="./webappfromscratch.html">previous</a>
-        <a href="./browser-technologies.html">next</a>
-    </nav>
-
-
     <main>
-
-        <form action="">
-            <h2>Css to the Rescue </h2>
+        <form action="./browser-technologies.html">
+            <h3>Css to the Rescue </h3>
 
             <fieldset>
+                <legend>About css to the Rescue </legend>
 
-                <legend>About Css to the Rescue </legend>
-
-                <label for="">Lecturer(s) of the course <br>
-                    <input type=""><br><br>
+                <label for="">The lecturers of "css to the rescue" were <i>Sanne't Hooft and Vasilis van Gemert</i> . 
                 </label>
 
-                <label for=""> In which period of the week did you follow this course<br>
-                    <input type="text">
+                <label for="">1. What is your opinion of the lectures delivered by Sanne't Hooft and Vasilis van Gemer, or the
+                    explanations provided during the course?"
+                    <textarea name="wafs-opinion" id="" cols="40" rows="5"
+                        placeholder="Write your opinion here"></textarea>
                 </label>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Grade your experience on Css to the Rescue</legend>
+
+                <label for="">2. How difficult was this course on a scale from 1 to 10? </label>
+
+                <label for=""> Grade on a scale of 1 to 10.</label> 
+
+                <div class="grade-scale">
+                    <input type="radio" name="grade1" id="q1-1" value="1" hidden>
+                    <label for="q1-1"><span>1</span></label>
+                    <input type="radio" name="grade1" id="q1-2" value="2" hidden>
+                    <label for="q1-2"><span>2</span></label>
+                    <input type="radio" name="grade1" id="q1-3" value="3" hidden>
+                    <label for="q1-3"><span>3</span></label>
+                    <input type="radio" name="grade1" id="q1-4" value="4" hidden>
+                    <label for="q1-4"><span>4</span></label>
+                    <input type="radio" name="grade1" id="q1-5" value="5" hidden>
+                    <label for="q1-5"><span>5</span></label>
+                    <input type="radio" name="grade1" id="q1-6" value="6" hidden>
+                    <label for="q1-6"><span>6</span></label>
+                    <input type="radio" name="grade1" id="q1-7" value="7" hidden>
+                    <label for="q1-7"><span>7</span></label>
+                    <input type="radio" name="grade1" id="q1-8" value="8" hidden>
+                    <label for="q1-8"><span>8</span></label>
+                    <input type="radio" name="grade1" id="q1-9" value="9" hidden>
+                    <label for="q1-9"><span>9</span></label>
+                    <input type="radio" name="grade1" id="q1-10" value="10" hidden>
+                    <label for="q1-10"><span>10</span></label>
+                </div>
+                
+                <label for="">3. Explain why  </label> 
+                    <textarea name="wafs-opinion" id="" cols="40" rows="5"placeholder="Write your opinion here"></textarea>
+               
 
             </fieldset>
 
 
 
-            <fieldset><br>
+            <fieldset>
+                <label for=""> 4.How well did you undertand Css to the Rescue </label>
+                <label for=""> Grade on a scale of 1 to 10.</label>
 
-                <legend>Grade your experience on Css to the Rescue </legend>
+                <div class="grade-scale">
+                    <input type="radio" name="grade2" id="q2-1" value="1" hidden>
+                    <label for="q2-1"><span>1</span></label>
+                    <input type="radio" name="grade2" id="q2-2" value="2" hidden>
+                    <label for="q2-2"><span>2</span></label>
+                    <input type="radio" name="grade2" id="q2-3" value="3" hidden>
+                    <label for="q2-3"><span>3</span></label>
+                    <input type="radio" name="grade2" id="q2-4" value="4" hidden>
+                    <label for="q2-4"><span>4</span></label>
+                    <input type="radio" name="grade2" id="q2-5" value="5" hidden>
+                    <label for="q2-5"><span>5</span></label>
+                    <input type="radio" name="grade2" id="q2-6" value="6" hidden>
+                    <label for="q2-6"><span>6</span></label>
+                    <input type="radio" name="grade2" id="q2-7" value="7" hidden>
+                    <label for="q2-7"><span>7</span></label>
+                    <input type="radio" name="grade2" id="q2-8" value="8" hidden>
+                    <label for="q2-8"><span>8</span></label>
+                    <input type="radio" name="grade2" id="q2-9" value="9" hidden>
+                    <label for="q2-9"><span>9</span></label>
+                    <input type="radio" name="grade2" id="q2-10" value="10" hidden>
+                    <label for="q2-10"><span>10</span></label>
+                </div>
 
-                <label for="">How difficult was this course on a scale from 1 to 10? <br><br>
-                    <label for=""><input type="radio" name="grade" id="1">1</label>
-                    <label for=""><input type="radio" name="grade" id="2">2</label>
-                    <label for=""><input type="radio" name="grade" id="3">3</label>
-                    <label for=""><input type="radio" name="grade" id="4">4</label>
-                    <label for=""><input type="radio" name="grade" id="5">5</label>
-                    <label for=""><input type="radio" name="grade" id="6">6</label>
-                    <label for=""><input type="radio" name="grade" id="7">7</label>
-                    <label for=""><input type="radio" name="grade" id="8">8</label>
-                    <label for=""><input type="radio" name="grade" id="9">9</label>
-                    <label for=""><input type="radio" name="grade" id="10">10</label>
-                </label><br><br>
-
-                <label for=""> Explain why <br> <br>
-                    <input type="text" name="" id=""><br>
-                </label> <br>
+                <label for="">5. Explain why
+                    <textarea name="wafs-opinion" id="" cols="40" rows="5"
+                        placeholder="Write your opinion here"></textarea>
+                </label>
+            </fieldset>
 
 
-                <label for="">How well did you undertand css to the rescue <br><br>
-                    <label for=""><input type="radio" name="">very bad</label>
-                    <label for=""><input type="radio">bad</label>
-                    <label for=""><input type="radio">good</label>
-                    <label for=""><input type="radio">excellent</label>
-                    <link rel="stylesheet" href="styles.css">
-                </label><br><br>
 
-                <label for=""> Explain why <br><br>
-                    <input type="text" name="" id="">
+            <fieldset>
+                <label for="">6. Did you find the explanations provided during the course understandable?.
+                </label>
+                <label for=""> Grade on a scale of 1 to 10.</label> 
+
+                <div class="grade-scale">
+                    <input type="radio" name="grade3" id="q3-1" value="1" hidden>
+                    <label for="q3-1"><span>1</span></label>
+                    <input type="radio" name="grade3" id="q3-2" value="2" hidden>
+                    <label for="q3-2"><span>2</span></label>
+                    <input type="radio" name="grade3" id="q3-3" value="3" hidden>
+                    <label for="q3-3"><span>3</span></label>
+                    <input type="radio" name="grade3" id="q3-4" value="4" hidden>
+                    <label for="q3-4"><span>4</span></label>
+                    <input type="radio" name="grade3" id="q3-5" value="5" hidden>
+                    <label for="q3-5"><span>5</span></label>
+                    <input type="radio" name="grade3" id="q3-6" value="6" hidden>
+                    <label for="q3-6"><span>6</span></label>
+                    <input type="radio" name="grade3" id="q3-7" value="7" hidden>
+                    <label for="q3-7"><span>7</span></label>
+                    <input type="radio" name="grade3" id="q3-8" value="8" hidden>
+                    <label for="q3-8"><span>8</span></label>
+                    <input type="radio" name="grade3" id="q3-9" value="9" hidden>
+                    <label for="q3-9"><span>9</span></label>
+                    <input type="radio" name="grade3" id="q3-10" value="10" hidden>
+                    <input type="radio" name="grade3" id="q3-10" value="10" hidden>
+                    <label for="q3-10"><span>10</span></label>
+                </div>
+
+                <label for="">5. Explain why 
+                    <textarea name="wafs-opinion" id="" cols="40" rows="5"
+                        placeholder="Write your opinion here"></textarea>
                 </label>
 
-            </fieldset>
-            <br><br>
+            </fieldset> 
 
-            <input class="submit-button" type="submit" name="submit" id="">
+            <div class="navigation-buttons">
+                <button>
+
+                    <a href="./webappfromscratch.html">previous</a>
+
+                </button>
+
+                <button type="submit">
+
+                    <a href="./browser-technologies.html">next</a>
+
+                </button>
 
 
-            </fieldset>
-
+            </div>
 
         </form>
+
     </main>
+
 </body>
 
 </html>
+

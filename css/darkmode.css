@@ -16,19 +16,26 @@ body:has(#dark-mode:checked) {
 
 
 body:has(#dark-mode:checked) main  {
-  /* background-color: yellow; */
-  background-color: var(--darkmode-background-color);
+  background-color:rgba(74, 9, 74, 0.634);
   color:white;
 
 }
 body:has(#dark-mode:checked) header{
+  background-color: white;
+}
+
+
+/*** input **/
+
+body:has(#dark-mode:checked) input{
   background-color: var(--darkmode-background-color);
 }
 
 
+
 body:has(#dark-mode:checked) .navbar{
     color:rgb(129, 126, 126);
-    background-color:var(--darkmode-background-color);
+    background-color:rgb(31, 3, 31);
     padding-left: 1em;
     /* border-bottom: 10em solid rgba(137, 43, 226, 0.071); */
    
