@@ -60,24 +60,17 @@ Local storage is a web storage mechanism that allows web application to store ke
 
 
 
-
-
-
-## Testing
-
-###
+## Darkomode and lightmode
 Darkmode effect not working in Firefox with has()selector 
 I was using firefox as my browser. I realised that the has selector doesn't work in firefox. I wanted to use the has selector to create a darkmode effect. 
 
 ## Form validation
 
-### Html form validation
-
-### what is form validation? 
+## what is form validation? 
 
 Form validation is the process of ensuring that the data entered into a web form is correct and meets certain criteria before it is submitted to the server. It is an important aspect of web development as it helps prevent errors and ensures that the data collected is accurate and consistent.
 
-### Form validation with html ? 
+## Form validation with html ? 
 
 HTML provides a few built-in form validation attributes that can be added to form elements to ensure that the data entered meets certain criteria. These attributes work on the client-side using JavaScript and can provide immediate feedback to the user.
 
@@ -85,16 +78,42 @@ HTML provides a few built-in form validation attributes that can be added to for
 
 <img width="622" alt="image" src="https://user-images.githubusercontent.com/90154152/229869545-2726a4b6-43c3-4ab5-8fba-128ca3a13c84.png">
 
-- Pattern Attribute. i used the pattern atrribute to specify a regular expressen that the data must match . With the student id. I made a added the pattern to the input so when the id provided by the user is less than 9 numbers. The error message then shows. 
+- Pattern Attribute. i used the pattern atrribute to specify a regular expression that the data must match . With the student id. I made a added the pattern to the input so when the id provided by the user is less than 9 numbers. The error message then shows. 
 
 <img width="606" alt="image" src="https://user-images.githubusercontent.com/90154152/229870043-3cb7b42e-5288-4f0b-8dcc-3f77db5e6c5e.png">
 
-### Form validation with CSS
+## Form validation with CSS? 
 
 Form validation in CSS can be done using the :valid and :invalid pseudo-classes. When a user inputs data into a form field, these pseudo-classes can be used to style the input based on whether the data entered is valid or not.
 
 
 I used the valid and invalid pseudo classes for my inputs with the has selector. 
+
+
+## Form validation with Js 
+ 
+ In designing surveys or forms, it's essential to consider how user-friendly they are. One way to make surveys more user-friendly is by providing positive feedback to users as they fill out the form.
+
+In this code, the textAreaValidation() function focuses on the text area by ensuring that the user receives a positive feedback message when they fill out the text field and the text area. This message says "Well done" and is intended to motivate the user to complete the rest of the fields in the survey.
+
+By providing positive feedback to users, this function creates a more engaging and interactive user experience, which can lead to increased survey completion rates. Furthermore, by focusing on the text area and providing feedback, users are more likely to be encouraged to fill out the rest of the form and provide accurate and relevant information.
+
+
+  <img width="425" alt="image" src="https://user-images.githubusercontent.com/90154152/235224281-c3af2559-edac-4fe0-acc1-ab74619a6efe.png">
+  
+ 
+ 
+ 
+##  Clearly indicate where you can go back to the previous questions or skip a question.
+
+
+  
+## Saving user information - Using local storage. 
+
+
+
+
+
 
 
 
