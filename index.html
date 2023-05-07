@@ -16,39 +16,50 @@
 <body>
 
     <header>
+
         <nav class="navbar">
+
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
-            <ul class="menu">
-                <li><a href="index.html">Personal Info</a></li>
-                <li><a href="../html/webappfromscratch.html">Step 1</a></li>
-                <li><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
-                <li><a href="../html/browser-technologies.html">Step 3 </a></li>
-                <li><a href="../html/progressive-web-apps.html">Step 4 </a></li>
-                <li><a href="../html/real-time-web.html">Step 5 </a></li>
-                <li><a href="../html/human-centered-design.html">Step 6</a></li>
-                <li><a href="../html/meester-proof.html">Step 7</a></li>
-            </ul>
+            <div class="progressive-bar">
+                <ul class="menu">
+                    <li  id ="current-page"><a href="index.html">Personal Info</a></li>
+                    <li><a href="../html/webappfromscratch.html">Step 1</a></li>
+                    <li><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
+                    <li><a href="../html/browser-technologies.html">Step 3 </a></li>
+                    <li><a href="../html/progressive-web-apps.html">Step 4 </a></li>
+                    <li><a href="../html/real-time-web.html">Step 5 </a></li>
+                    <li><a href="../html/human-centered-design.html">Step 6</a></li>
+                    <li><a href="../html/meester-proof.html">Step 7</a></li>
+                </ul>
+            </div>
 
             <form action="" class="dark-mode">
                 <input type="checkbox" id="dark-mode">
                 <label for="dark-mode">Toggle</label>
 
             </form>
+
         </nav>
+
+
     </header>
 
+
+
     <main>
+
         <h1>MINOR WEB ENQUÊTE</h1>
 
         <form id="personal-info">
             <h2>Personal Information </h2>
-            
+
             <fieldset>
                 <legend>Would you kindly feel in your personal information?</legend>
 
@@ -73,16 +84,26 @@
 
         </form>
 
-        <button type="submit">
-            <a href="./html/webappfromscratch.html">Next</a>
 
-        </button>
+        <div>
+
+            <button type="submit">
+                <a href="./html/webappfromscratch.html">Next</a>
+
+            </button>
+
+            <button>
+                <a href="./html/webappfromscratch.html">Skip</a>
+            </button>
+
+        </div>
 
 
 
     </main>
 
-<script src="/script.js"></script>
+    <script src="/script.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Form</title>
+</head>
+<body>
+
+	<form action="#" method="POST">
+
+		<label for="text1">Text Area 1:</label><br>
+		<textarea id="text1" name="text1" rows="4" cols="50"></textarea><br>
+
+		<label for="text2">Text Area 2:</label><br>
+		<textarea id="text2" name="text2" rows="4" cols="50"></textarea><br>
+
+		<input type="submit" value="Submit" onclick="checkText()">
+
+	</form>
+
+	<script>
+		function checkText() {
+			var text1 = document.getElementById("text1").value;
+			var text2 = document.getElementById("text2").value;
+
+			if (text1.includes("well done")) {
+				alert("Well done message already present in Text Area 1.");
+				return false;
+			}
+
+			if (text2.includes("well done")) {
+				alert("Well done message already present in Text Area 2.");
+				return false;
+			}
+		}
+	</script>
+
+</body>
+</html>

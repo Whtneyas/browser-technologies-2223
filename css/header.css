@@ -2,6 +2,7 @@ body {
   font-family: Calibri, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--lightmode-background-color);
   line-height: 29px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -14,25 +15,26 @@ body {
 :root {
   /***Darkmode ***/
   --darkmode-background-color: #161b22;
-  --darkmode-text-color-icons: #f0f6fc;
-  --pimary-color: #25167a;
 
 
 
   /***Lightmode **/
-  --lightmode-background-color: #ffff;
-  --lightmode-text-color-icons: #24292e;
+  --lightmode-background-color: #d5e1e1;
+  --lightmode-background-heading: #212426;
+  --lightmode-menu-color: #212426;
+  --lightmode-fieldset-color: #9faab5;
+  --lightmode-progressive-bar:#577982;
+  
+
 
 
 }
 
 
 
-
 header {
   margin: 0;
   max-height: 50%;
-  background-color: rgba(221, 160, 221, 0.208);
 
 
 }
@@ -50,7 +52,7 @@ header>div p {
 
 header .navbar {
   padding: 1em;
-  background-color: purple;
+
 }
 
 
@@ -69,18 +71,11 @@ section:nth-of-type(1) p {
 
 
 main {
-  background-color: white;
+  background-color: var(--lightmode-background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(221, 160, 221, 0.208);
-
-
-}
-
-#personal-info-next {
-  background-color: #25167a;
 }
 
 #personal-info-next a {
@@ -90,8 +85,6 @@ main {
 }
 
 #personal-info-next a:hover {
-
-  background-color: #25167a;
   color: white;
   height: 2em;
 }
@@ -118,7 +111,7 @@ main {
 }
 
 #personal-info h3 {
-  color: #25167a;
+  color: var(--lightmode-background-heading);
   text-align: left;
 
 }
@@ -153,9 +146,8 @@ label {
 
 #personal-info input:focus {
   outline-style: dashed;
-  outline-width: .1em;
-  outline-color: purple;
-  box-shadow: 0px 0px 4px purple;
+  outline-width: .095em;
+  outline-color: var(--lightmode-background-heading);
 
 } */
 
@@ -216,21 +208,16 @@ header nav {
   justify-content: center;
   gap: 3em;
   text-decoration: none;
-
-
-
 }
 
 header nav a {
   text-decoration: none;
-  color: black;
   height: 1.5em;
   padding: .5em;
 
 }
 
 header nav a:hover {
-  background-color: #25167a;
   color: white;
 }
 
@@ -263,7 +250,7 @@ form {
 }
 
 form fieldset {
-  background-color: rgba(221, 160, 221, 0.101);
+  background-color: #57798247;
   display: flex;
   flex-direction: column;
   border:none;
@@ -292,9 +279,9 @@ form legend {
 
 
 form textarea:focus {
-  background-color: #25167a28;
+  background-color:var(--lightmode-background-color);
   outline-style: dashed;
-  outline-color: purple;
+  outline-color: var(--lightmode-background-heading);
   outline-width: .1em;
   border: none;
   border-radius: .3em;
@@ -321,7 +308,7 @@ textarea {
   display: flex;
   justify-content:center;
   align-items: center;
-  background:rgba(221, 160, 221, 0.257);
+  background:var(--lightmode-background-color);
   font-size: .9rem;
 
 }
@@ -354,9 +341,24 @@ textarea {
 
 
 .grade-scale input[type ="radio"]:checked + label{
-  background-color: rgba(128, 0, 128, 0.541);
+  background-color: #5779826c;
   color:white;
 }
+
+.results1,
+.results2,
+.results3 {
+  width:20em;
+  height:2em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.valid-feedback {
+  color:green;
+}
+
 
 
 /**Buttons**/
@@ -370,7 +372,7 @@ textarea {
 }
 
 button {
-  background-color: #25167a;
+  background-color:var(--lightmode-progressive-bar);
   color: white;
   border: none;
   margin: auto;
@@ -392,7 +394,7 @@ a {
 section {
   display: flex;
   flex-direction: column;
-  background-color: plum;
+  background-color:var(--lightmode-fieldset-color);
   justify-content: center;
  
   align-items: center;
@@ -412,7 +414,7 @@ section > div{
   margin: auto 2em;
   flex-direction: column;
   background-color: white;
-  border-top:2em solid purple;
+  border-top:2em solid var(--lightmode-menu-color);
   padding: 1em;
   border-radius: 1em;
   justify-content: center;
@@ -446,15 +448,8 @@ section p {
 
 @media(min-width:44em) {
 
-  header .navbar {
-    /* padding: 1em; */
-    background-color: purple;
-
-  }
-
 
   header .navbar li {
-    background-color: plum;
     border: none;
   }
 
@@ -539,7 +534,7 @@ section p {
   }
 
   button:hover {
-    background-color: purple;
+    background-color: var(--lightmode-menu-color);
     padding: 1em;
 
   }

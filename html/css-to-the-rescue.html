@@ -14,6 +14,7 @@
 
 <body>
 
+
     <header>
         <nav class="navbar">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -23,16 +24,19 @@
                 <span></span>
             </label>
 
-            <ul class="menu">
-                <li><a href="/index.html">Personal Info</a></li>
-                <li><a href="../html/webappfromscratch.html">Step 1</a></li>
-                <li><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
-                <li><a href="../html/browser-technologies.html">Step 3 </a></li>
-                <li><a href="../html/progressive-web-apps.html">Step 4 </a></li>
-                <li><a href="../html/real-time-web.html">Step 5 </a></li>
-                <li><a href="../html/human-centered-design.html">Step 6</a></li>
-                <li><a href="../html/meester-proof.html">Step 7</a></li>
-            </ul>
+            <div class="progressive-bar">
+                <ul class="menu">
+                    <li id="current-page"><a href="/index.html">Personal Info</a></li>
+                    <li id="current-page"><a href="../html/webappfromscratch.html">Step 1</a></li>
+                    <li id="current-page"><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
+                    <li><a href="../html/browser-technologies.html">Step 3 </a></li>
+                    <li><a href="../html/progressive-web-apps.html">Step 4 </a></li>
+                    <li><a href="../html/real-time-web.html">Step 5 </a></li>
+                    <li><a href="../html/human-centered-design.html">Step 6</a></li>
+                    <li><a href="../html/meester-proof.html">Step 7</a></li>
+                </ul>
+
+            </div>
 
             <form action="" class="dark-mode">
                 <input type="checkbox" id="dark-mode">
@@ -42,7 +46,6 @@
         </nav>
     </header>
 
-
     <main>
         <form action="./browser-technologies.html">
             <h3>Css to the Rescue </h3>
@@ -50,12 +53,13 @@
             <fieldset>
                 <legend>About css to the Rescue </legend>
 
-                <label for="">The lecturers of "css to the rescue" were <i>Sanne't Hooft and Vasilis van Gemert</i> . 
+                <label for="">The lecturers of "css to the rescue" were <i>Sanne't Hooft and Vasilis van Gemert</i> .
                 </label>
 
-                <label for="">1. What is your opinion of the lectures delivered by Sanne't Hooft and Vasilis van Gemer, or the
+                <label for="">1. What is your opinion of the lectures delivered by Sanne't Hooft and Vasilis van Gemer,
+                    or the
                     explanations provided during the course?"
-                    <textarea name="wafs-opinion" id="" cols="40" rows="5"
+                    <textarea name="css" id="css-opinion" cols="40" rows="5"
                         placeholder="Write your opinion here"></textarea>
                 </label>
             </fieldset>
@@ -67,10 +71,10 @@
 
                 <label for="">2. How difficult was this course on a scale from 1 to 10? </label>
 
-                <label for=""> Grade on a scale of 1 to 10.</label> 
+                <label for=""> Grade on a scale of 1 to 10.</label>
 
                 <div class="grade-scale">
-                    <input type="radio" name="grade1" id="q1-1" value="1" hidden>
+                    <input type="radio" name="Css-grade1" id="q1-1" value="1" hidden>
                     <label for="q1-1"><span>1</span></label>
                     <input type="radio" name="grade1" id="q1-2" value="2" hidden>
                     <label for="q1-2"><span>2</span></label>
@@ -91,10 +95,11 @@
                     <input type="radio" name="grade1" id="q1-10" value="10" hidden>
                     <label for="q1-10"><span>10</span></label>
                 </div>
-                
-                <label for="">3. Explain why  </label> 
-                    <textarea name="wafs-opinion" id="" cols="40" rows="5"placeholder="Write your opinion here"></textarea>
-               
+                <div class="results1"></div>
+
+                <label for="">3. Explain why </label>
+                <textarea name="css" id="css-opinion" cols="40" rows="5"
+                    placeholder="Write your opinion here"></textarea>
 
             </fieldset>
 
@@ -105,7 +110,7 @@
                 <label for=""> Grade on a scale of 1 to 10.</label>
 
                 <div class="grade-scale">
-                    <input type="radio" name="grade2" id="q2-1" value="1" hidden>
+                    <input type="radio" name="Css-grade2" id="q2-1" value="1" hidden>
                     <label for="q2-1"><span>1</span></label>
                     <input type="radio" name="grade2" id="q2-2" value="2" hidden>
                     <label for="q2-2"><span>2</span></label>
@@ -127,8 +132,10 @@
                     <label for="q2-10"><span>10</span></label>
                 </div>
 
+                <div class="results2"></div>
+
                 <label for="">5. Explain why
-                    <textarea name="wafs-opinion" id="" cols="40" rows="5"
+                    <textarea name="css-opinion" id="" cols="40" rows="5"
                         placeholder="Write your opinion here"></textarea>
                 </label>
             </fieldset>
@@ -138,7 +145,7 @@
             <fieldset>
                 <label for="">6. Did you find the explanations provided during the course understandable?.
                 </label>
-                <label for=""> Grade on a scale of 1 to 10.</label> 
+                <label for=""> Grade on a scale of 1 to 10.</label>
 
                 <div class="grade-scale">
                     <input type="radio" name="grade3" id="q3-1" value="1" hidden>
@@ -164,12 +171,13 @@
                     <label for="q3-10"><span>10</span></label>
                 </div>
 
-                <label for="">5. Explain why 
-                    <textarea name="wafs-opinion" id="" cols="40" rows="5"
-                        placeholder="Write your opinion here"></textarea>
-                </label>
+                <div class="results3"></div>
 
-            </fieldset> 
+                <label for="">5. Explain why
+                   <textarea name="css" id="css-opinion" cols="40" rows="5"
+                        placeholder="Write your opinion here"></textarea>
+
+            </fieldset>
 
             <div class="navigation-buttons">
                 <button>
@@ -194,4 +202,3 @@
 </body>
 
 </html>
-
