@@ -152,7 +152,7 @@ label {
 } */
 
 legend {
-  font-weight: 200;
+ 
 }
 
 
@@ -232,7 +232,7 @@ main h2 {
 }
 
 h3 {
-  color: #25167a;
+  color:var(--lightmode-menu-color);
   font-size: 1.4rem;
 }
 
@@ -266,15 +266,19 @@ i {
 
 form h3,
 p {
-  color: #25167a;
-  text-align: center;
+  color: var(--darkmode-background-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration-line: overline;
 
 
 }
 
 form legend {
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+ ;
+
 }
 
 

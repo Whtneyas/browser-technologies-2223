@@ -1,23 +1,12 @@
-// const radios = document.querySelectorAll('.grade-scale input[type="radio"]');
-// const output = document.getElementById('output');
-
-// radios.forEach(radio => {
-//   radio.addEventListener('change', (event) => {
-//     output.innerHTML = `You selected option ${event.target.value}.`;
-//   });
-// });
-
-
-
-console.log('hello')
-//Variabele
+//Variables
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const studentIdInput = document.getElementById('student-id');
 const textAreas = document.querySelectorAll('textarea');
 const formInputs = document.querySelectorAll('input[type="text"] , input[type="email"]');
 let formRadios = document.querySelectorAll('input[type="radio"]');
 const testRadioButtons = document.querySelectorAll('input[type="radio"]')
-const email = document.getElementById("email");
-// const textarea = document.querySelector('textarea');
-// var messageDisplayed = false;
+
 
 
 
@@ -40,69 +29,59 @@ testRadioButtons.forEach(button => {
           document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
         case 'Css-grade1':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
+          document.querySelector('.results1').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
         case 'Css-grade2':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
+          document.querySelector('.results2').innerHTML = `You've graded this subject on a scale of${getRadioValue}.`
           break;
         case 'Css-grade3':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
+          document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of${getRadioValue}.`
           break;
-        case 'pwa-lesstof-beoordeling':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
+        case 'BT-grade1':
+          document.querySelector('.results1').innerHTML = `You've graded this subject on a scale of${getRadioValue}.`
           break;
-        case 'pwa-uitleg-beoordeling':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
+        case 'BT-grade2':
+          document.querySelector('.results2').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'pwa-eigen-inzicht':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
+        case 'BT-grade3':
+          document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of${getRadioValue}.`
           break;
-        case 'brotech-lesstof-beoordeling':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
+        case 'PWA-grade1':
+          document.querySelector('.results1').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'brotech-uitleg-beoordeling':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
+        case 'PWA-grade2':
+          document.querySelector('.results2').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'brotech-eigen-inzicht':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
+        case 'PWA-grade3':
+          document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'realtimeweb-lesstof-beoordeling':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
+        case 'RTW-grade1':
+          document.querySelector('.results1').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'realtimeweb-uitleg-beoordeling':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
+        case 'RTW-grade2':
+          document.querySelector('.results2').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'realtimeweb-eigen-inzicht':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
+        case 'RTW-grade3':
+          document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'human-centred-design-lesstof-beoordeling':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
+        case 'HCD-grade1':
+          document.querySelector('.results1').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'human-centred-design-uitleg-beoordeling':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
+        case 'HCD-grade2':
+          document.querySelector('.results2').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'human-centred-design-eigen-inzicht':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
+        case 'HCD-grade3':
+          document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'meesterproef-lesstof-beoordeling':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
+        case 'MP-grade1':
+          document.querySelector('.results1').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'meesterproef-uitleg-beoordeling':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
+        case 'MP-grade2':
+          document.querySelector('.results2').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'meesterproef-eigen-inzicht':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
+        case 'MP-grade3':
+          document.querySelector('.results3').innerHTML = `You've graded this subject on a scale of ${getRadioValue}.`
           break;
-        case 'weekly-nerd-lesstof-beoordeling':
-          document.querySelector('.results1').innerHTML = `Je geeft de lesstof een ${getRadioValue}.`
-          break;
-        case 'weekly-nerd-uitleg-beoordeling':
-          document.querySelector('.results2').innerHTML = `Je geeft de uitleg een ${getRadioValue}.`
-          break;
-        case 'weekly-nerd-eigen-inzicht':
-          document.querySelector('.results3').innerHTML = `Je geeft je eigen inzicht een ${getRadioValue}.`
-          break;
-
 
         default:
           break;
