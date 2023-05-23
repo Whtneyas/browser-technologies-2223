@@ -23,8 +23,8 @@ body {
   --lightmode-background-heading: #212426;
   --lightmode-menu-color: #212426;
   --lightmode-fieldset-color: #9faab5;
-  --lightmode-progressive-bar:#577982;
-  
+  --lightmode-progressive-bar: #577982;
+
 
 
 
@@ -103,6 +103,14 @@ main {
 }
 
 
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
 
 /****Optional**/
 .optional {
@@ -149,16 +157,14 @@ label {
   outline-width: .095em;
   outline-color: var(--lightmode-background-heading);
 
-} */
-
-legend {
- 
 }
+
+*/ legend {}
 
 
 /***Validation personal information**/
-/* 
-#personal-info input[type="text"]:valid,
+
+/* #personal-info input[type="text"]:valid,
 input[type="email"]:valid {
   border: 1px solid green;
   border-bottom: 3px solid green;
@@ -195,9 +201,47 @@ input[type="email"]:invalid {
   font-weight: bold;
   transform: translateY(-2em);
   right: 30em;
-} */
+}  */
 
 
+
+/**For firefox**/
+
+
+#personal-info input[type="text"]:valid,
+  #personal-info input[type="email"]:valid {
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+  }
+
+  /* Styling for invalid text and email inputs */
+  #personal-info input[type="text"]:invalid,
+  #personal-info input[type="email"]:invalid {
+    border: 3px solid rgb(193, 8, 8);
+    border-bottom: 1px solid rgb(193, 8, 8);
+  }
+
+  /* Styling for required inputs */
+  #personal-info input:required {
+    border: 1px solid rgb(193, 8, 8);
+    border-bottom: 4px solid rgb(193, 8, 8);
+  }
+
+  /* Styling for well done message for valid text inputs */
+  #personal-info fieldset label input[type="text"]:valid ~ span::after {
+    content: 'well done';
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  /* Styling for well done message for valid email inputs */
+  #personal-info fieldset label input[type="email"]:valid ~ span::after {
+    content: 'well done';
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+  }
 
 
 /*******************************ALL PAGES ***************************************/
@@ -232,7 +276,7 @@ main h2 {
 }
 
 h3 {
-  color:var(--lightmode-menu-color);
+  color: var(--lightmode-menu-color);
   font-size: 1.4rem;
 }
 
@@ -253,7 +297,7 @@ form fieldset {
   background-color: #57798247;
   display: flex;
   flex-direction: column;
-  border:none;
+  border: none;
   gap: .7em;
 }
 
@@ -277,13 +321,13 @@ p {
 form legend {
   font-weight: 400;
   font-size: 1.2rem;
- ;
+  ;
 
 }
 
 
 form textarea:focus {
-  background-color:var(--lightmode-background-color);
+  background-color: var(--lightmode-background-color);
   outline-style: dashed;
   outline-color: var(--lightmode-background-heading);
   outline-width: .1em;
@@ -293,12 +337,12 @@ form textarea:focus {
 
 
 /**Text area */
-textarea::placeholder{
+textarea::placeholder {
   position: absolute;
-  left:1em;
+  left: 1em;
   color: grey;
   bottom: 4em;
-} 
+}
 
 
 textarea {
@@ -308,11 +352,11 @@ textarea {
 }
 
 
- .grade-scale {
+.grade-scale {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  background:var(--lightmode-background-color);
+  background: var(--lightmode-background-color);
   font-size: .9rem;
 
 }
@@ -344,23 +388,23 @@ textarea {
 }
 
 
-.grade-scale input[type ="radio"]:checked + label{
+.grade-scale input[type="radio"]:checked+label {
   background-color: #5779826c;
-  color:white;
+  color: white;
 }
 
 .results1,
 .results2,
 .results3 {
-  width:20em;
-  height:2em;
+  width: 20em;
+  height: 2em;
   font-style: italic;
   font-weight: bold;
 }
 
 
 .valid-feedback {
-  color:green;
+  color: green;
 }
 
 
@@ -376,14 +420,14 @@ textarea {
 }
 
 button {
-  background-color:var(--lightmode-progressive-bar);
+  background-color: var(--lightmode-progressive-bar);
   color: white;
   border: none;
   margin: auto;
   border-radius: .2em;
   padding: .7em;
   align-items: center;
-  
+
 }
 
 button,
@@ -398,11 +442,12 @@ a {
 section {
   display: flex;
   flex-direction: column;
-  background-color:var(--lightmode-fieldset-color);
+  background-color: var(--lightmode-fieldset-color);
   justify-content: center;
- 
+
   align-items: center;
-  height: 100vh; /* set the section height to full viewport height */
+  height: 100vh;
+  /* set the section height to full viewport height */
 }
 
 section h4 {
@@ -412,13 +457,13 @@ section h4 {
   text-transform: uppercase;
 }
 
-section > div{
+section>div {
 
   display: flex;
   margin: auto 2em;
   flex-direction: column;
   background-color: white;
-  border-top:2em solid var(--lightmode-menu-color);
+  border-top: 2em solid var(--lightmode-menu-color);
   padding: 1em;
   border-radius: 1em;
   justify-content: center;
@@ -473,6 +518,11 @@ section p {
   }
 
 
+  
+button,
+
+
+
   #personal-info input {
     width: 25em;
     height: 2em;
@@ -480,7 +530,7 @@ section p {
     border-bottom: 1px solid black;
 
   }
-
+/* 
   #personal-info label:has(input[type="text"]:valid)::after {
     content: 'well done';
     color: green;
@@ -499,23 +549,23 @@ section p {
     font-weight: bold;
     transform: translateY(-4.3em);
     right: 30em;
-  }
+  } */
 
 
 
-  
+
 
   textarea {
     width: 50em;
     height: 5rem;
-    
+
   }
 
-/***Grading scale **/
+  /***Grading scale **/
   .grade-scale {
-   gap: 1em;
+    gap: 1em;
   }
-  
+
 
   .grade-scale label:before {
     content: "";
@@ -524,7 +574,7 @@ section p {
     border-radius: 50%;
     text-align: right;
   }
-  
+
 
 
   .navigation-buttons {
@@ -544,6 +594,5 @@ section p {
   }
 
 
- 
-}
 
+}

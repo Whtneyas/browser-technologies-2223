@@ -1,9 +1,6 @@
 :root {
     /***Darkmode ***/
     --darkmode-background-color: #161b22;
-  
-  
-  
     /***Lightmode **/
     --lightmode-background-color: #d5e1e1;
     --lightmode-background-heading: #212426;
@@ -148,6 +145,14 @@
 
     }
 
+
+    
+#current-page  {
+    background-color: var(--lightmode-menu-color);
+    color: white;
+
+}
+
     .menu-icon {
         display: none;
 
@@ -172,8 +177,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #d5e1e1;
-        color: none;
+        color: white;
+    
         width: 3em;
         font-weight: bolder;
         height: 1em;

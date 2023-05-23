@@ -4,15 +4,14 @@ const emailInput = document.getElementById('email');
 const studentIdInput = document.getElementById('student-id');
 const textAreas = document.querySelectorAll('textarea');
 const formInputs = document.querySelectorAll('input[type="text"] , input[type="email"]');
-let formRadios = document.querySelectorAll('input[type="radio"]');
-const testRadioButtons = document.querySelectorAll('input[type="radio"]')
+const radioInputs = document.querySelectorAll('input[type="radio"]')
 
 
 
 
 //---------------------------Show the value that the user chose
 
-testRadioButtons.forEach(button => {
+radioInputs.forEach(button => {
   button.addEventListener('change', () => {
     const getRadioName = button.name;
     const getRadioValue = button.value;
@@ -125,3 +124,95 @@ function textAreaValidation() {
 
   })
 }
+
+
+  // // Load saved values from local storage
+  // textAreas.forEach(textarea => {
+  //   const key = textarea.name;
+  //   textarea.value = localStorage.getItem(key) || '';
+  // });
+  // radioInputs.forEach(input => {
+  //   const key = input.name;
+  //   input.checked = localStorage.getItem(key) === 'true' || false;
+  // });
+
+  // // Save textarea value to local storage on change
+  // textAreas.forEach(textarea => {
+  //   textarea.addEventListener('input', () => {
+  //     const key = textarea.name;
+  //     localStorage.setItem(key, textarea.value);
+  //   });
+  // });
+
+  // // Save input values to local storage on change
+  // radioInputs.forEach(input => {
+  //   input.addEventListener('change', () => {
+  //     const key = input.name;
+  //     const value = input.checked;
+  //     localStorage.setItem(key, value);
+  //   });
+  // });
+
+
+  // // Load saved values from local storage
+  // textAreas.forEach(textarea => {
+  //   const key = textarea.name;
+  //   textarea.value = localStorage.getItem(key) || '';
+  // });
+  // radioInputs.forEach(input => {
+  //   const key = input.name;
+  //   input.checked = localStorage.getItem(key) === 'true' || false;
+  // });
+
+  // // Save textarea value to local storage on change
+  // textAreas.forEach(textarea => {
+  //   textarea.addEventListener('input', () => {
+  //     const key = textarea.name;
+  //     localStorage.setItem(key, textarea.value);
+  //   });
+  // });
+
+  // // Save input values to local storage on change
+  // radioInputs.forEach(input => {
+  //   input.addEventListener('change', () => {
+  //     const key = input.name;
+  //     const value = input.checked;
+  //     localStorage.setItem(key, value);
+  //   });
+  // });
+
+
+
+  // Load saved values from local storage
+  textAreas.forEach(textarea => {
+    const key = textarea.name;
+    textarea.value = localStorage.getItem(key) || '';
+  });
+  radioInputs.forEach(input => {
+    const key = input.name;
+    const storedValue = localStorage.getItem(key);
+    if (storedValue !== null) {
+      input.checked = input.value === storedValue;
+    }
+  });
+
+  // Save textarea value to local storage on change
+  textAreas.forEach(textarea => {
+    textarea.addEventListener('input', () => {
+      const key = textarea.name;
+      localStorage.setItem(key, textarea.value);
+    });
+  });
+
+  // Save input values to local storage on change
+  radioInputs.forEach(input => {
+    input.addEventListener('change', () => {
+      const key = input.name;
+      const value = input.value;
+      localStorage.setItem(key, value);
+    });
+  });
+
+
+
+

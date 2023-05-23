@@ -17,6 +17,7 @@
 
     <header>
 
+
         <nav class="navbar">
 
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -29,7 +30,7 @@
 
             <div class="progressive-bar">
                 <ul class="menu">
-                    <li  id ="current-page"><a href="index.html">Personal Info</a></li>
+                    <li id="current-page"><a href="index.html">Personal Info</a></li>
                     <li><a href="../html/webappfromscratch.html">Step 1</a></li>
                     <li><a href="../html/css-to-the-rescue.html">Step 2 </a></li>
                     <li><a href="../html/browser-technologies.html">Step 3 </a></li>
@@ -38,8 +39,8 @@
                     <li><a href="../html/human-centered-design.html">Step 6</a></li>
                     <li><a href="../html/meester-proof.html">Step 7</a></li>
                 </ul>
-            </div>
 
+            </div>
             <form action="" class="dark-mode">
                 <input type="checkbox" id="dark-mode">
                 <label for="dark-mode">Toggle</label>
@@ -49,60 +50,56 @@
         </nav>
 
 
+
     </header>
-
-
 
     <main>
 
-        <h1>MINOR WEB ENQUÊTE</h1>
+        <h1 tabindex="1">MINOR WEB ENQUÊTE</h1>
 
         <form id="personal-info">
-            <h2>Personal Information </h2>
+            <h2  >Personal Information</h2>
 
             <fieldset>
-                <legend>Would you kindly feel in your personal information?</legend>
+                <legend>Would you kindly fill in your personal information?</legend>
 
-                <label for="name">Name: <span class="optional">(optional)</span> <br>
-
-                    <input type="text" id="name" name="name" placeholder="name and surname "><br><br>
-                    <span></span>
-
+                <label for="name">Name: <span class="optional">(optional)</span><br>
+                    <input type="text" id="name" name="name" placeholder="name and surname"><br>
+                    <span id="name-error" class="error"></span>
                 </label>
 
-                <label for="email">Email: <span class="optional">(required)</span> <br>
-                    <input type="email" id="email" name="email" placeholder="name@gmail.com" required> <br><br>
-                    <span></span>
+                <label for="email">Email: <span class="optional">(required)</span><br>
+                    <input type="email" id="email" name="email" placeholder="name@gmail.com" required><br>
+                    <span id="email-error" class="error"></span>
+                    <span id="email-success" class="success"></span>
                 </label>
 
-                <label for="student Id ">Student-ID: <span class="optional">(optional)</span> <br>
+                <label for="student-id">Student-ID: <span class="optional">(optional)</span><br>
                     <input type="text" id="student-id" name="student-id" placeholder="contains 9 numbers"
-                        pattern="[0-9]{9}"><br><br>
-                    <span></span>
+                        pattern="[0-9]{9}"><br>
+                    <span id="student-id-error" class="error"></span>
+                    <span id="student-id-success" class="success"></span>
                 </label><br>
             </fieldset>
 
+            <div>
+                <button type="submit">
+                    <a href="/html/webappfromscratch.html"></a> Next
+                </button>
+
+                <button>
+                    <a href="./html/webappfromscratch.html">Skip</a>
+                </button>
+
+            </div>
         </form>
-
-
-        <div>
-
-            <button type="submit">
-                <a href="">Next</a>
-
-            </button>
-
-            <button>
-                <a href="./html/webappfromscratch.html">Skip</a>
-            </button>
-
-        </div>
 
 
 
     </main>
 
-    <script src="/script.js"></script>
+   
+    <script src="./validation.js"></script>
 
 </body>
 
