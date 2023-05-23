@@ -111,6 +111,21 @@ By providing positive feedback to users, this function creates a more engaging a
 ## Saving user information - Using local storage. 
 
 
+## Accessibiility 
+Making your website acessible is one of the best way to provide a user friendly website. Not excluding people with low visions, color blind and also 
+when apps or website are been read in the sun which fades colors and text away. How do i contribute to making accessibilty better ? 
+
+### Color Contrast 
+I texted my website in firefox and realised that the color contrast of the navigation fades away and doesn't complement eeachother so i had to change the color of the text to a better shade to make readabilty more easier. 
+
+### BEFORE 
+<img width="951" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/e789ba78-dfc3-4cac-b8da-f6e8c6722707">
+
+### AFTER 
+<img width="945" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/fe1320db-3535-489e-ae0b-626dbac3bd95">
+
+
+
 
 
 
