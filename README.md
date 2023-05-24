@@ -55,9 +55,6 @@ Went on pinterest looking fot inspirations for my specific design for my survey.
 ## Process
 
 
-## Darkomode and lightmode
-Darkmode effect not working in Firefox with has()selector 
-I was using firefox as my browser. I realised that the has selector doesn't work in firefox. I wanted to use the has selector to create a darkmode effect. 
 
 ## Form validation
 
