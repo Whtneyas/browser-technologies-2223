@@ -7,9 +7,6 @@
     --lightmode-menu-color: #212426;
     --lightmode-fieldset-color: #9faab5;
     --lightmode-progressive-bar:#577982;
-    
-
-  
   
   }
   
@@ -23,8 +20,6 @@
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .menu-toggle {
     display: none;
@@ -142,9 +137,7 @@
         left: 0;
         transform: translateX(0%);
         /* padding-top: 1em; */
-
     }
-
 
     
 #current-page  {
@@ -170,8 +163,6 @@
         -webkit-border-radius: 0px 200px 200px 0px;
         -moz-border-radius: 0px 200px 200px 0px;
     }
-
-
 
     .menu li a {
         display: flex;

@@ -126,63 +126,7 @@ function textAreaValidation() {
 }
 
 
-  // // Load saved values from local storage
-  // textAreas.forEach(textarea => {
-  //   const key = textarea.name;
-  //   textarea.value = localStorage.getItem(key) || '';
-  // });
-  // radioInputs.forEach(input => {
-  //   const key = input.name;
-  //   input.checked = localStorage.getItem(key) === 'true' || false;
-  // });
-
-  // // Save textarea value to local storage on change
-  // textAreas.forEach(textarea => {
-  //   textarea.addEventListener('input', () => {
-  //     const key = textarea.name;
-  //     localStorage.setItem(key, textarea.value);
-  //   });
-  // });
-
-  // // Save input values to local storage on change
-  // radioInputs.forEach(input => {
-  //   input.addEventListener('change', () => {
-  //     const key = input.name;
-  //     const value = input.checked;
-  //     localStorage.setItem(key, value);
-  //   });
-  // });
-
-
-  // // Load saved values from local storage
-  // textAreas.forEach(textarea => {
-  //   const key = textarea.name;
-  //   textarea.value = localStorage.getItem(key) || '';
-  // });
-  // radioInputs.forEach(input => {
-  //   const key = input.name;
-  //   input.checked = localStorage.getItem(key) === 'true' || false;
-  // });
-
-  // // Save textarea value to local storage on change
-  // textAreas.forEach(textarea => {
-  //   textarea.addEventListener('input', () => {
-  //     const key = textarea.name;
-  //     localStorage.setItem(key, textarea.value);
-  //   });
-  // });
-
-  // // Save input values to local storage on change
-  // radioInputs.forEach(input => {
-  //   input.addEventListener('change', () => {
-  //     const key = input.name;
-  //     const value = input.checked;
-  //     localStorage.setItem(key, value);
-  //   });
-  // });
-
-
-
+ 
   // Load saved values from local storage
   textAreas.forEach(textarea => {
     const key = textarea.name;

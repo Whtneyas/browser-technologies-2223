@@ -4,9 +4,8 @@ body {
   padding: 0;
   background-color: var(--lightmode-background-color);
   line-height: 29px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
+  font-family: 'Prompt', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 400;
 
 }
 
@@ -15,9 +14,6 @@ body {
 :root {
   /***Darkmode ***/
   --darkmode-background-color: #161b22;
-
-
-
   /***Lightmode **/
   --lightmode-background-color: #d5e1e1;
   --lightmode-background-heading: #212426;
@@ -25,11 +21,7 @@ body {
   --lightmode-fieldset-color: #9faab5;
   --lightmode-progressive-bar: #577982;
 
-
-
-
 }
-
 
 
 header {
@@ -98,8 +90,6 @@ main {
   padding-left: 1em;
   padding-right: 1em;
 
-
-
 }
 
 
@@ -145,10 +135,7 @@ label {
   padding: 0.5em;
   margin-top: 0.7em;
   border: none;
-  border-radius: .2em;
-
-
-
+  border-radius: .2em
 
 }
 
@@ -159,7 +146,7 @@ label {
 
 }
 
-*/ legend {}
+
 
 
 /***Validation personal information**/
@@ -315,11 +302,10 @@ p {
   font-weight: 400;
   text-decoration-line: overline;
 
-
 }
 
 form legend {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.2rem;
   ;
 
@@ -334,7 +320,6 @@ form textarea:focus {
   border: none;
   border-radius: .3em;
 }
-
 
 /**Text area */
 textarea::placeholder {
@@ -380,18 +365,18 @@ textarea {
   cursor: pointer;
 }
 
-.grade-scale label:before {
+/* .grade-scale label:before {
   content: "";
   width: 2px;
   display: inline-block;
   border-radius: 50%;
-}
+} */
 
 
 .grade-scale input[type="radio"]:checked+label {
   background-color: #5779826c;
   color: white;
-}
+} */
 
 .results1,
 .results2,
@@ -406,7 +391,6 @@ textarea {
 .valid-feedback {
   color: green;
 }
-
 
 
 /**Buttons**/
@@ -518,8 +502,6 @@ section p {
   }
 
 
-  
-button,
 
 
 

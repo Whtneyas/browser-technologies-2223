@@ -1,7 +1,4 @@
 
-
-
-
 // Get the form element
 const form = document.getElementById("personal-info");
 

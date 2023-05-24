@@ -3,17 +3,12 @@
   --darkmode-background-color: #161b22;
 
 
-
   /***Lightmode **/
   --lightmode-background-color: #d5e1e1;
   --lightmode-background-heading: #212426;
   --lightmode-menu-color: #212426;
   --lightmode-fieldset-color: #9faab5;
   --lightmode-progressive-bar: #577982;
-
-
-
-
 }
 
 
@@ -38,7 +33,7 @@ body:eas(#dark-mode:checked) {
 
 
 body:has(#dark-mode:checked) main {
-  background-color:#21242696;
+  background-color:#577982;
   color: black;
 
 }
