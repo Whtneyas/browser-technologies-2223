@@ -275,8 +275,39 @@ The following browser will be used to test the application
 
 PS. Initially i will say chrome supports everything 
 
+<img width="558" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/f6ad39d0-d012-4cb4-b89e-f06a85781c9d">
+
+
 
 ### Safari IOS
+
+ Safari ios also work perfectly 
+ - Supports has selector 
+ - Validation works perfectly 
+ - Colors are the same 
+ - Supports font 
+ - Saves data 
+ 
+ 
+ <img width="187" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/792eebf4-4bb9-4ab0-9f8f-bcdf57362b6a">
+
+
+### Firefox 
+
+- `Has()` selector doesn't work in firefox
+- Used a different approach to replace the `has()`selector that is the ~ method for the css validation
+
+<img width="491" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/edc08543-b784-4a2c-a09c-cd1606f4ea21">
+
+
+
+### Prince XML 
+
+
+
+
+
+
 
 
 
