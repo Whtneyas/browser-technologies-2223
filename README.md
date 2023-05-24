@@ -87,7 +87,12 @@ HTML provides a few built-in form validation attributes that can be added to for
 Form validation in CSS can be done using the :valid and :invalid pseudo-classes. When a user inputs data into a form field, these pseudo-classes can be used to style the input based on whether the data entered is valid or not.
 
 
-I used the valid and invalid pseudo classes for my inputs with the has selector. 
+I used the valid and invalid pseudo classes for my inputs with the has selector. The has selector does not work on firefox.
+
+
+For 
+<img width="517" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/30daf3ee-9eb2-45d6-a0ab-e3f1665ad0ec">
+
 
 
 ## Form validation with Js 
@@ -99,16 +104,75 @@ In this code, the textAreaValidation() function focuses on the text area by ensu
 By providing positive feedback to users, this function creates a more engaging and interactive user experience, which can lead to increased survey completion rates. Furthermore, by focusing on the text area and providing feedback, users are more likely to be encouraged to fill out the rest of the form and provide accurate and relevant information.
 
 
+
+### In firefox using ~selector 
   <img width="425" alt="image" src="https://user-images.githubusercontent.com/90154152/235224281-c3af2559-edac-4fe0-acc1-ab74619a6efe.png">
   
- 
+### in other browsers using the has() selector 
+<img width="358" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/73ddd368-2c12-47b8-99b4-b147191e6c4f">
+
  
  
 ##  Clearly indicate where you can go back to the previous questions or skip a question.
 
+I made a progressive bar which indicate where you are and with the progressive bar you can skip the pages by clicking on the page you would like to edit. Below the page the user can find the navigation buttons that directs the user to go to the next or previous page 
 
-  
+### How did i make it happen?
+
+I made a naviagtion bar with a list of the links to the various pagges. I gave an id to each navigation link and gave it a different color which indicates that the user is active on that page. I applied the same method to all the other pages. 
+
+This is the the endresults 
+
+<img width="851" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/6ce07921-7d1d-43c0-ac4f-300a4c1f9b48">
+
+
 ## Saving user information - Using local storage. 
+To be able to save users information using local storage I first selected the inputs using queryselector. I selected the inputs and textareas in js. 
+I then load the information being filled with the. **getItem()** method. What the **.getItem()** method does is that it retreives the data that has been been filled in the textarea. I did the same for the radio buttons. 
+
+Next I added an eventlister to the input . The eventlistener triggers when change has been made and executesI saved the data with the **setItem()** method. The **setItem()** method saves the data been filled in the textarea. 
+
+<img width="364" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/75e4464d-dfbc-4327-badd-1de1d2fdcd6e">
+
+
+## No available radio buttons 
+ 
+  To make the radio buttons not look like a radio button. I first had to make the radio button disappear and create a new one using the **::before** 
+  method.
+ 
+ <img width="656" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/b66f6757-6267-4703-8eb0-ff29ac885d98">
+  
+<img width="656" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/83cddf6d-0cb7-4814-bda2-7c4bc9281f34">tHI
+
+### With the hidden property you can hide the radio buttons in html 
+<img width="657" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/740114a5-005b-40fa-890d-aa3c69a875c1">
+
+
+## Form should have a darkmode and lightmode: 
+
+### Lightmode and darkmode in html 
+In html you can place this line of code in the head to display the darkmode theme : 
+`<meta name="color-scheme" content="light dark">`
+
+**Lightmode in html** 
+
+**Darkmode in html**
+<img width="827" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/a9c32c7c-2b9c-4190-81c1-fd671e5d0968">
+
+<img width="877" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/250d81e6-8caa-4f22-92b9-9671e65b427a">
+
+### Light mode and darkmode with css. 
+I used the has method to achieve this results. 
+
+**lightmode with css**
+
+<img width="880" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/1c23b58d-5522-489b-80d4-df0a6ab9a4b6">
+
+
+**Darkmode with css**
+<img width="895" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/d8697e5f-8a69-428d-a221-656e0901e56d">
+
+
 
 
 ## Accessibiility 
@@ -123,6 +187,58 @@ I texted my website in firefox and realised that the color contrast of the navig
 
 ### AFTER 
 <img width="945" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/fe1320db-3535-489e-ae0b-626dbac3bd95">
+
+
+
+## Reliable, Usable & Pleasurable.
+A reliable website performs well and works without issues. Usability focuses on making the website easy to navigate and use. A pleasurable website creates an enjoyable and engaging experience. These aspects combined enhance user satisfaction, encourage longer visits, and contribute to the success of the website.
+
+ It is advisable to build your app in the following layers.
+ - Reliable (HTML)
+ - Usable (CSS)
+ - Pleasurable (JS)
+
+### Implementation of reliable/ functional  layer.
+The following are what i did to make my form reliable :
+
+- In the functional layer i used different types of patterns to create a validation for the user. For example of the id and email. I used the required method and a pattern that required that the id contains of 9 numbers
+
+<img width="568" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/e8793395-262b-4921-bfbe-800292120da5">
+
+- I also grouped similar  questions in a fieldset to make it clear to the user .
+
+- I used a form tag to create a form. I used diffrent type of inputs such as , text area, input, and radio buttons.
+
+- I also made progressive disclosure to by creating different pages 
+- Displaying the form in darkmode and light mode 
+- I also included the submit in the buttons so that the browsers knows that the information is to be submitted when clicked on.
+
+
+### Implementation of usable layer.
+
+The following are what i did to make my form usable . IN this layer I added some features to the reliable layer to make it more usable. 
+
+- I made my radio buttons invisible and added styling to  it to not make it look like a radio buttons
+
+- I added form validation using the `:valid and :invalid`
+- I made my survey totally responsive. It can be used on all devices both bigger and smaller devices.
+- I added hover states to all navigation elemets 
+- I added a darkmode to it. 
+- Tested my color contrast to make sure it is readable to all.
+
+
+### Implementation of pleasurable layer. 
+
+In this layer, the form should be advanced. This layer should give the user an unforgettable experience. 
+
+The following are what i did to create a pleasurable layer. 
+- Saved data of the user using local storage
+- Validation for the form 
+- Gave positive feedback when the user fills in an information
+
+
+
+
 
 
 
