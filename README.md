@@ -268,6 +268,21 @@ This is how my survey looks without css.
 
 ### Screenreader test
 
+I downlaoded an extension from chrome to test using a screenreader. The screen reader i downloaded is screenreader stand alone . That is what it is called.
+
+<img width="875" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/4f20ba13-b831-46fc-baf9-d93c761466cd">
+<img width="1033" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/11736212-ea53-48d7-bb02-bc9d5aca989e">
+
+
+- It reads what is required and what is optional 
+- It also reads the radio buttons on a scale to 10 
+- Reads the place holder. That is also a good thing 
+- Reads the navigation buttons
+- It doesn't read the menu bar. It just starts of with the headings.
+
+
+
+
 
 
 ### Tab :focus 
