@@ -54,15 +54,7 @@ Went on pinterest looking fot inspirations for my specific design for my survey.
 
 ## Process
 
-### Saving users info using local storage
 
-Local storage is a web storage mechanism that allows web application to store key value pairs in the user's web browser. With localStorage you can store and retrieve data on the client side without the need of the server. So that is what i am going to do since i am not using any server.
-
-
-
-## Darkomode and lightmode
-Darkmode effect not working in Firefox with has()selector 
-I was using firefox as my browser. I realised that the has selector doesn't work in firefox. I wanted to use the has selector to create a darkmode effect. 
 
 ## Form validation
 
@@ -134,6 +126,22 @@ Next I added an eventlister to the input . The eventlistener triggers when chang
 
 <img width="364" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/75e4464d-dfbc-4327-badd-1de1d2fdcd6e">
 
+## Server side : What will happen when js is disabled;
+To save information from a form using Express, you would typically follow these steps:
+
+1. I will first set up an Express server by installing the Express framework and create a server file (e.g., `server.js`). I will then require the necessary modules and set up the server using `app = express()`.
+
+2. I will Create a route to handle form submissions by define a route on the server to handle the form submission. This route should listen for the appropriate HTTP method (e.g., POST) and URL path (e.g., '/submit').
+
+3. I will use a middleware such as `body-parser` or the built-in `express.json()` middleware to parse the form data sent in the request body.
+
+4. I will then validate and process the data in the route handler and  validate the received form data to ensure it meets my requirements.
+
+5. I will then use a database like MongoDb . Will connect the database and create a scheme or collectionand save the form data as a new document.
+
+6.  After saving the data I will  send a response back to the client to acknowledge the successful submission. This can be an HTTP status code (e.g., 200) or a JSON response with a success message.
+
+
 
 ## No available radio buttons 
  
@@ -177,7 +185,14 @@ I used the has method to achieve this results.
 
 ## Accessibiility 
 Making your website acessible is one of the best way to provide a user friendly website. Not excluding people with low visions, color blind and also 
-when apps or website are been read in the sun which fades colors and text away. How do i contribute to making accessibilty better ? 
+when apps or website are been read in the sun which fades colors and text away. How do i contribute to making accessibilty better? 
+
+
+## Custom fonts
+It is advisable to always have a font fallback when implementing a customize font. Not all fonts work in all browserss so it's needed to add a fallback font to your customize font. This is how i implemented a fallback font by first placing my customize font as first and the rest of the font as a fallback font in case the the browsers don't support the customize font.
+
+<img width="515" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/0dfbe797-81f2-46dd-aa95-b2ce3621fd01">
+
 
 ### Color Contrast 
 I texted my website in firefox and realised that the color contrast of the navigation fades away and doesn't complement eeachother so i had to change the color of the text to a better shade to make readabilty more easier. 
@@ -235,6 +250,62 @@ The following are what i did to create a pleasurable layer.
 - Saved data of the user using local storage
 - Validation for the form 
 - Gave positive feedback when the user fills in an information
+
+
+## TESTING
+
+### Testing on browser 
+The following browser will be used to test the application
+- safari 
+- Safari mac 
+- Samsung mobile 
+- Google chrome desktop 
+- PrinceXml
+
+
+### Chrome 
+
+- Supports `has()` selector 
+- Supports darkmode and lightmode 
+- Data is stored in local storage 
+- It looks good on mobile 
+
+PS. Initially i will say chrome supports everything 
+
+<img width="558" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/f6ad39d0-d012-4cb4-b89e-f06a85781c9d">
+
+
+
+### Safari IOS
+
+ Safari ios also work perfectly 
+ - Supports has selector 
+ - Validation works perfectly 
+ - Colors are the same 
+ - Supports font 
+ - Saves data 
+ 
+ 
+ <img width="187" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/792eebf4-4bb9-4ab0-9f8f-bcdf57362b6a">
+
+
+### Firefox 
+
+- `Has()` selector doesn't work in firefox
+- Used a different approach to replace the `has()`selector that is the ~ method for the css validation
+
+<img width="491" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/edc08543-b784-4a2c-a09c-cd1606f4ea21">
+
+
+
+### Prince XML 
+
+
+
+
+
+
+
 
 
 
