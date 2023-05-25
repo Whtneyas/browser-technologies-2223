@@ -254,6 +254,11 @@ The following are what i did to create a pleasurable layer.
 
 ## TESTING
 
+### Disabling CSS 
+
+
+### Screenreader 
+
 ### Testing on browser 
 The following browser will be used to test the application
 - safari 
@@ -314,7 +319,46 @@ PS. Initially i will say chrome supports everything
 <img width="412" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/b1240463-75c2-4e6a-a5ec-1facbb942e9c">
 
 
+## Samsung 
+- Supports has() selector 
+- Validation works 
+- Savind data works 
+- 
+![WhatsApp Image 2023-05-25 at 23 38 31](https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/949ccf71-2f28-49d1-918b-03b217bafeb4)
+
+
+
+
 ### Prince XML 
+<img width="207" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/7b1af427-f9a1-4991-b0a2-675ec4a90639">
+
+* What works
+
+- Support font
+- Color works perfectly 
+- The radio buttons doesn't look bad 
+
+
+* What doesn't work
+
+- Ignores placeholder 
+- Doesn't support grid 
+- Menu misplaced 
+-Buttons attached to eachother 
+- Doesn't also support the gap property
+
+
+
+
+## Resources 
+- https://www.princexml.com/
+- https://stackoverflow.com/questions/14046738/how-to-disable-css-in-browser-for-testing-purposes
+- https://coolors.co/contrast-checker/112a46-acc8e5
+- https://blog.logrocket.com/localstorage-javascript-complete-guide/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid
+
+
+
 
 
 
