@@ -199,40 +199,40 @@ input[type="email"]:invalid {
 /**For firefox**/
 
 
-#personal-info input[type="text"]:valid,
+/* #personal-info input[type="text"]:valid,
   #personal-info input[type="email"]:valid {
     border: 1px solid green;
     border-bottom: 3px solid green;
-  }
+  } */
 
   /* Styling for invalid text and email inputs */
-  #personal-info input[type="text"]:invalid,
+  /* #personal-info input[type="text"]:invalid,
   #personal-info input[type="email"]:invalid {
     border: 3px solid rgb(193, 8, 8);
     border-bottom: 1px solid rgb(193, 8, 8);
-  }
+  } */
 
   /* Styling for required inputs */
-  #personal-info input:required {
+  /* #personal-info input:required {
     border: 1px solid rgb(193, 8, 8);
     border-bottom: 4px solid rgb(193, 8, 8);
-  }
+  } */
 
   /* Styling for well done message for valid text inputs */
-  #personal-info fieldset label input[type="text"]:valid ~ span::after {
+  /* #personal-info fieldset label input[type="text"]:valid ~ span::after {
     content: 'well done';
     color: green;
     font-weight: bold;
     margin-left: 10px;
-  }
+  } */
 
   /* Styling for well done message for valid email inputs */
-  #personal-info fieldset label input[type="email"]:valid ~ span::after {
+  /* #personal-info fieldset label input[type="email"]:valid ~ span::after {
     content: 'well done';
     color: green;
     font-weight: bold;
     margin-left: 10px;
-  }
+  } */
 
 
 /*******************************ALL PAGES ***************************************/

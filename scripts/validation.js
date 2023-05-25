@@ -51,7 +51,7 @@ function validateEmail() {
         emailSuccess.textContent = "";
     } else {
         emailError.textContent = "";
-        emailSuccess.textContent = "✓";
+        emailSuccess.textContent = "correct ✓";
     }
 }
 
@@ -63,7 +63,7 @@ function validateStudentId() {
         studentIdSuccess.textContent = "";
     } else {
         studentIdError.textContent = "";
-        studentIdSuccess.textContent = "✓";
+        studentIdSuccess.textContent = "correct ✓";
     }
 }
 
