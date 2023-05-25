@@ -108,13 +108,15 @@ body:has(#dark-mode:checked) .navbar .menu>li> a {
 }
 
 .dark-mode input:checked+label {
-  background: var(--darkmode-background-color);
+  background: var(--lightmode-background-color);
 }
 
 .dark-mode input:checked+label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
   transition: 2s;
+  background: var(--lightmode-fieldset-color);
+
 }
 
 
