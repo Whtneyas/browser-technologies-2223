@@ -255,9 +255,26 @@ The following are what i did to create a pleasurable layer.
 ## TESTING
 
 ### Disabling CSS 
+This is how my survey looks without css. 
+<img width="670" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/6b819d06-a6a4-4797-b82c-fdbfccc426f4">
+
+* What works? 
+- All buttons and links work. 
+- Data can be input in de text field 
+- Validation works with the required property 
+- Radio buttons work 
 
 
-### Screenreader 
+
+### Screenreader test
+
+
+
+### Tab :focus 
+Browsers already have a built in focus state. To make it more visible i gave it a different color for it to be more visible. Navigation becomes clearer to people who use the tab key to navigate 
+
+![image](https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/d53a3364-026c-4bfe-b28a-318ab562b66a)
+
 
 ### Testing on browser 
 The following browser will be used to test the application
