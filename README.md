@@ -293,12 +293,30 @@ PS. Initially i will say chrome supports everything
 
 - `Has()` selector doesn't work in firefox
 - Used a different approach to replace the `has()`selector that is the ~ method for the css validation
+- As fallback voor the css validation i used the ~ sibling selector
 
 <img width="491" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/edc08543-b784-4a2c-a09c-cd1606f4ea21">
 
 
+### Macbook ios 
+*What works 
+- Position of textareas are misplaced
+- Text turns to white instead of black
+- next and skip buttons are attached to each other 
+
+*What works 
+- Saves data 
+-  Progressive bar works accordingly 
+-  Js validation works 
+-  Supports has selector 
+-  Does not support has selector 
+-  
+<img width="412" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/b1240463-75c2-4e6a-a5ec-1facbb942e9c">
+
 
 ### Prince XML 
+
+
 
 
 
