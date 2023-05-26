@@ -254,6 +254,43 @@ The following are what i did to create a pleasurable layer.
 
 ## TESTING
 
+### Disabling CSS 
+This is how my survey looks without css. 
+<img width="670" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/6b819d06-a6a4-4797-b82c-fdbfccc426f4">
+
+* What works? 
+- All buttons and links work. 
+- Data can be input in de text field 
+- Validation works with the required property 
+- Radio buttons work 
+
+
+
+### Screenreader test
+
+I downlaoded an extension from chrome to test using a screenreader. The screen reader i downloaded is screenreader stand alone . That is what it is called.
+
+<img width="875" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/4f20ba13-b831-46fc-baf9-d93c761466cd">
+<img width="1033" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/11736212-ea53-48d7-bb02-bc9d5aca989e">
+
+
+- It reads what is required and what is optional 
+- It also reads the radio buttons on a scale to 10 
+- Reads the place holder. That is also a good thing 
+- Reads the navigation buttons
+- It doesn't read the menu bar. It just starts of with the headings.
+
+
+
+
+
+
+### Tab :focus 
+Browsers already have a built in focus state. To make it more visible i gave it a different color for it to be more visible. Navigation becomes clearer to people who use the tab key to navigate 
+
+![image](https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/d53a3364-026c-4bfe-b28a-318ab562b66a)
+
+
 ### Testing on browser 
 The following browser will be used to test the application
 - safari 
@@ -293,12 +330,69 @@ PS. Initially i will say chrome supports everything
 
 - `Has()` selector doesn't work in firefox
 - Used a different approach to replace the `has()`selector that is the ~ method for the css validation
+- As fallback voor the css validation i used the ~ sibling selector
 
 <img width="491" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/edc08543-b784-4a2c-a09c-cd1606f4ea21">
 
 
+### Macbook ios 
+*What works 
+- Position of textareas are misplaced
+- Text turns to white instead of black
+- next and skip buttons are attached to each other 
+
+*What works 
+- Saves data 
+-  Progressive bar works accordingly 
+-  Js validation works 
+-  Supports has selector 
+-  Does not support has selector 
+-  
+<img width="412" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/b1240463-75c2-4e6a-a5ec-1facbb942e9c">
+
+
+## Samsung 
+- Supports has() selector 
+- Validation works 
+- Savind data works 
+- 
+![WhatsApp Image 2023-05-25 at 23 38 31](https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/949ccf71-2f28-49d1-918b-03b217bafeb4)
+
+
+
 
 ### Prince XML 
+<img width="207" alt="image" src="https://github.com/Whtneyas/browser-technologies-2223/assets/90154152/7b1af427-f9a1-4991-b0a2-675ec4a90639">
+
+* What works
+
+- Support font
+- Color works perfectly 
+- The radio buttons doesn't look bad 
+
+
+* What doesn't work
+
+- Ignores placeholder 
+- Doesn't support grid 
+- Menu misplaced 
+-Buttons attached to eachother 
+- Doesn't also support the gap property
+
+
+
+
+## Resources 
+- https://www.princexml.com/
+- https://stackoverflow.com/questions/14046738/how-to-disable-css-in-browser-for-testing-purposes
+- https://coolors.co/contrast-checker/112a46-acc8e5
+- https://blog.logrocket.com/localstorage-javascript-complete-guide/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid
+
+
+
+
+
 
 
 
