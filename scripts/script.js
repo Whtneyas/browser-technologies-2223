@@ -8,7 +8,6 @@ const radioInputs = document.querySelectorAll('input[type="radio"]')
 
 
 
-
 //---------------------------Show the value that the user chose
 
 radioInputs.forEach(button => {

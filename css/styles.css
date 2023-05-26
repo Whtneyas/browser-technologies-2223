@@ -14,7 +14,6 @@ body {
 }
 
 
-
 :root {
   /***Darkmode ***/
   --darkmode-background-color: #161b22;
@@ -27,19 +26,27 @@ body {
 
 }
 
+:focus{
+ border-color: rgb(201, 98, 8);
+ border-style: dashed;
+ outline: none;
+  padding: 1em;
+}
+
 
 header {
   margin: 0;
   max-height: 50%;
 
-
 }
+
 
 header>div {
   margin-top: 1em;
   padding: 0;
 
 }
+
 
 header>div p {
   line-height: 0;
@@ -84,7 +91,6 @@ main {
   color: white;
   height: 2em;
 }
-
 
 
 #personal-info {
@@ -477,12 +483,6 @@ section p {
 
 
 
-
-
-
-
-
-
 @media(min-width:44em) {
 
 
@@ -574,7 +574,7 @@ section p {
   }
 
   button:hover {
-    background-color: var(--lightmode-menu-color);
+    background-color: var(--darkmode-background-color);
     padding: 1em;
 
   }
